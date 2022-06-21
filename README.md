@@ -21,7 +21,7 @@ This Guide is in 7 Parts:
 
 ## Part 2 - Installing Your Virtual Machine
 
-1. Click on New
+1. Click on `New`
 ![1*tkjZEbnHKqPGN24HQw_kRA](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
 
 2. Change Machine Folder to `/Users/your_login/goinfre` and then click `continue` to move on to the next step
@@ -37,10 +37,10 @@ This Guide is in 7 Parts:
 ![1*6_D9jIyOW0jE3a6vF_UzXg](https://user-images.githubusercontent.com/58959408/174701340-d84f6c80-e09b-43ae-b31a-6dd5d6306f23.png)
 
 6. Click `Dyamically Allocated` and then click `Continue` to only use space on your Hard Disk
-<img width="696" alt="Screen Shot 2022-06-21 at 11 41 27 AM" src="https://user-images.githubusercontent.com/58959408/174701751-6b0fe5a3-36e9-487b-a9e1-6b39544b5275.png">
+![1*HagpR-UD0HWCb7zRTeSQXQ](https://user-images.githubusercontent.com/58959408/174744677-eac5b679-49f7-4881-a59b-00a420cbe640.png)
 
-7. Set Size as `12.00 GB` and then click `Continue` should be enough for this project
-![1*rYdYJbPswCVCUa5pwKcRZA](https://user-images.githubusercontent.com/58959408/174701552-71128cda-62cd-45d8-a439-1a86cfab89db.png)
+7. Set Size as `12.00 GB` and then click `Continue` this should be enough for this project
+![1*rYdYJbPswCVCUa5pwKcRZA](https://user-images.githubusercontent.com/58959408/174745855-73880988-be69-45cc-bb6d-7c6c1a40c1ac.png)
 
 8. Click `Settings` and then click `Storage` to view your Virtual Machine Storage
 ![1*V2wtat5wJyBjSEoXatkG0A](https://user-images.githubusercontent.com/58959408/174701830-69f7b13c-ac5d-44c2-9f05-de8fd8dcc6f5.png)
@@ -54,7 +54,7 @@ This Guide is in 7 Parts:
 11. Then click on the Virtual Machine file you downloaded and placed into `goinfre` from before
 ![1*FOldzHFaQ2JS_phe6z6T4g](https://user-images.githubusercontent.com/58959408/174702161-957eb0b6-2803-407f-b018-c02f7615f027.png)
 
-12. Click on your `Virtual Machine` and then click `'ok` to confirm your Virtual Machine Storage
+12. Click on your `Virtual Machine` and then click `'ok` to confirm you Virtual Machine Storage
 ![1*Evj7Z2EOq102A1zUVgUnQg](https://user-images.githubusercontent.com/58959408/174702820-824e0acf-f919-4bfb-a619-eea8068fe309.png)
 
 13. Click `Start` (The Green Arrow ➡️) to start your Virtual Machine
@@ -63,7 +63,7 @@ This Guide is in 7 Parts:
 
 ## Part 3 - Accessing Your Virtual Machine
 
-1. Use arrow keys 🔼 🔽 and press `Enter` on `Install`
+1. Use arrow keys 🔼 🔽 and press `Enter` on `Install` (This will start the installation proccess)
  ![1*-tV-M-4g6MH8h6pWJ27bCg](https://user-images.githubusercontent.com/58959408/174728861-fb9435a5-04e5-402c-80a3-f366c9b51be8.png)
 
 2. Press `enter` on `English - English` or your language of preference
@@ -75,19 +75,19 @@ This Guide is in 7 Parts:
 4. Press `enter` on `American English` or your keyboard of preference
 ![1*zKUk6R9tls_jiyY81ue8kA](https://user-images.githubusercontent.com/58959408/174729629-4f111978-4fc1-47ae-891f-aea693929480.png)
 
-5. Create a Host Name as your login, along with 42 at the end of your Host Name (eg. prossi42) - write down your Host Name, as you will need this later on. 
+5. Create a Host Name as your login, with 42 at the end (eg. prossi42) - write down your Host Name, as you will need this later on.
 ![1*r0fzgkzXOjK2DfsBCh7wEQ](https://user-images.githubusercontent.com/58959408/174729750-fbd2d215-b526-42c6-8ff0-b83f886c1f3c.png)
 
-6. Leave blank/empty and press `enter` on `Continue`
+6. Leave this blank, press `enter` on Continue 
 ![1*81XjZBZg2bbNXunuxgnFPQ](https://user-images.githubusercontent.com/58959408/174729840-a85c3319-3a70-4922-9335-e4bb6f765ee9.png)
 
-7. Create a Password for the Host Name - write this down as well, as your will need this later on. 
+7. Create a Password for the Host Name - write this down as well, as you will need this later on. 
 ![1*ft498oj7syh4zVjI48U_tw](https://user-images.githubusercontent.com/58959408/174729894-d0fc794f-add8-49e7-9015-521f9e93958f.png)
 
 8. Create a User Name - write this down as well as your will need this later on. 
 ![1*rhJWnMKN0TPBZwqRey9OeQ](https://user-images.githubusercontent.com/58959408/174729939-06933a35-5dd1-4924-848e-78d2023bb66e.png)
 
-9. Create a Password for the User Name - write this down as well, as your will need this later on. 
+9. Create a Password for the User Name - write this down as well, as you will need this later on. 
 ![1*fJFibR-WkevpF3fLwyZiag](https://user-images.githubusercontent.com/58959408/174729975-fa06abf4-f816-48f0-aaf5-a2ccaa43c9fe.png)
 
 10. Press `enter` on your `Timezone` (The timezone your currently doing this project in)
@@ -102,19 +102,19 @@ This Guide is in 7 Parts:
 13. Press `enter` on Select `Separate /home, /var, and /tmp paritions` (Last option from the list)
 ![1*r5zFPA7R_9BtIqwyOpCCVw](https://user-images.githubusercontent.com/58959408/174730481-2641b9c0-c50d-4f2b-9e71-3896a0760e10.png)
 
-14. Select `Yes` and press `Enter`
+14. Select `Yes` and press `Enter` to write the changes to disks and configure LVM
 ![1*NHdo3JbApICz0Co2epPLFA](https://user-images.githubusercontent.com/58959408/174730521-780f5eb2-4955-48df-8c59-af9914674ee7.png)
 
 15. Press `Enter` to `cancel` Erasing data as you won't need this for your Virtual Machine
 ![1*KHmnCUJUWhf1minIdHNS4g](https://user-images.githubusercontent.com/58959408/174730626-c132041c-3070-405f-a8d8-60d620a1d770.png)
 
-16. Create a Encryption passphrase - write this down as well, as your will need this later on.
+16. Create a Encryption passphrase - write this down as well, as you will need this later on.
 ![1*B0QL-gX7rZW5-RJyTD1uWw](https://user-images.githubusercontent.com/58959408/174730733-f306e051-4b0e-40de-93ab-56f2cdce45d5.png)
 
 17. Retype the Encryption passphrase you just created
 ![1*xE1owXa0ttpvcioaEwnutA](https://user-images.githubusercontent.com/58959408/174730804-796f6db1-8b59-4f8e-900c-1416f957db30.png)
 
-18. Type in `max`and press enter on `Continue`
+18. Type in `max`and press enter on `Continue` to assign the amount of volume group to use for guided partitioning
 ![1*SUFMu-qy3rBwIe9B0Bq3kg](https://user-images.githubusercontent.com/58959408/174730857-2de10217-3d42-41ca-8f43-fc91fddb64c6.png)
 
 19. Press enter on `Yes` for Partition Disks
@@ -129,13 +129,13 @@ This Guide is in 7 Parts:
 22. Press `enter` on deb.debian.org
 ![1*bLnFC6MebhW1-YZlI2n9_A](https://user-images.githubusercontent.com/58959408/174731066-6bef2e53-c891-477f-8a29-7e9984a6d911.png)
 
-23. Leave this blank and press `enter` on `continue`
+23. Leave this blank and press `enter` on continue
 ![1*e08pS8shLNmhZuFUrmuBwA](https://user-images.githubusercontent.com/58959408/174731175-bf4949d2-a832-4a1f-9282-c91195203c84.png)
 
 24. Press `enter` on `no` for Configuring popularity-contest
 ![1*1I6fHG3MHuovrarqj9PNnA](https://user-images.githubusercontent.com/58959408/174731301-88d7c53d-f5e2-46c3-b221-a8b40f70f81f.png)
 
-25. Deselect `SSH server` and `standard system utilities` by pressing the `Space key` and then press `enter` on `Continue` it should look something like this
+25. Deselect `SSH server` and `standard system utilities` by pressing the `Space key` and then press `enter` on `Continue`
 ![1*lGsuAQEwT0WBhb4kdUMp9g](https://user-images.githubusercontent.com/58959408/174731387-b4859ded-9a9f-409a-a9c9-57d1ec77cbfd.png)
 
 26. Press `enter` on `Yes` to Install the GRUB boot loader on a hard disk
@@ -150,7 +150,7 @@ This Guide is in 7 Parts:
 
 ## Part 3 - Starting Your Virtual Machine
 
-1. Press enter on `Debian GNU/Linux`
+1. Press enter on `Debian GNU/Linux` 
 
 2. Enter your encryption password you had created before
 
