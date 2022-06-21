@@ -278,3 +278,20 @@ Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence
 
 ## Part 7 - Born2BeRoot Defence Evaluation
 
+You will be evaluated on Born2BeRoot by the following:
+
+<img width="771" alt="Born2Be Root Mandatory" src="https://user-images.githubusercontent.com/58959408/174764815-70d48daf-2d14-4dc7-88a5-f1be6b409b71.png">
+
+<img width="771" alt="Born2Be Root Mandatory 2" src="https://user-images.githubusercontent.com/58959408/174767723-42d57f4c-3178-406a-a724-4d5176ee9071.png">
+<img width="771" alt="Born2Be Root Mandatory 3" src="https://user-images.githubusercontent.com/58959408/174767768-f1de7d1f-6e76-4206-8680-1b1cd276932b.png">
+<img width="771" alt="Born2Be Root Mandatory 4" src="https://user-images.githubusercontent.com/58959408/174767813-b9bff177-356b-44cf-915d-8a488421aff9.png">
+<img width="896" alt="Screen Shot 2022-06-21 at 7 02 41 PM" src="https://user-images.githubusercontent.com/58959408/174767831-e3969d5b-80b6-4053-bf05-e67d5721e580.png">
+
+### Signature.txt
+
+To generate a `signature.txt` file (Before you generate a signature.txt, please turn off your Virtual Machine, as your signature number may be altered during the evaluation)
+
+1. Open iTerm and type the following `cd /goinfre/VirtualBox VMs`
+2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
+3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
+4. Copy your signature number and create a .txt file and paste it in there, ready for submission. 
