@@ -1,8 +1,9 @@
 ## Born2BeRoot Step by Step
 
-This Guide is in 4 Parts: 
+This Guide is in 5 Parts: 
 - Downloading Your Virtual Machine
 - Installing Your Virtual Machine
+- Starting Your Virtual Machine
 - Accessing Your Virtual Machine
 - Configurating Your Virtual Machine
 
@@ -112,3 +113,5 @@ This Guide is in 4 Parts:
 27. Press `enter` on /dev/sda 
 
 28. Press `enter` to Finish the installation
+
+## Part 3 - Starting Your Virtual Machine
