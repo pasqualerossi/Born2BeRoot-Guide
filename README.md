@@ -1,11 +1,13 @@
 ## Born2BeRoot Step by Step
 
-This Guide is in 5 Parts: 
+This Guide is in 7 Parts: 
 - Part 1 - Downloading Your Virtual Machine
 - Part 2 - Installing Your Virtual Machine
 - Part 3 - Starting Your Virtual Machine
 - Part 4 - Configurating Your Virtual Machine
-- Part 5 - Born2BeRoot Defence Evaluation
+- Part 5 - Connecting to the SSH Server
+- Part 6 - Continue Configurating Your Virtual Machine
+- Part 7 - Your Born2BeRoot Defence Evaluation
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -128,28 +130,78 @@ This Guide is in 5 Parts:
 
 ### Part 4.1 - Installing Sudo
 
-1. Type `su -` to login in as the root user.
+1. First type `su -` to login in as the root user.
 2. Type `apt-get update -y` then type `apt-get upgrade -y` and then type `apt install sudo`
 3. Type `su -` then type `usermod -aG sudo your_username` to add user in the sudo group
 4. Type `sudo visudo` to open sudoers file
-5. Add this line in the file `your_username   ALL=(ALL) ALL`
+5. Lastly add this line in the file `your_username   ALL=(ALL) ALL`
 
 ### Part 4.2 - Installing Git and Vim
 
-Part 4.3 - Installing and Configuring SSH (Secure Shell Host)
+1. First type `apt-get update -y` then type `apt-get upgrade -y` and then type `apt-get install git -y` to install Git
+2. Type `git --version` to check the Git Version
+3. Type `sudo apt-get install wget` to get wget, a free and open source tool for downloading files from web repositories
+4. Lastly type `sudo apt-get install vim` to install Vim
 
-Part 4.4 - Installing and Configuring UFW (Uncomplicated Firewall)
+### Part 4.3 - Installing and Configuring SSH (Secure Shell Host)
 
-Part 4.5 - Connecting the SSH Server
+1. First type `sudo apt-get update`
+2. Type `sudo apt install openssh-server`
+3. Type `sudo systemctl status ssh` to check SSH Server Status
+4. Type `service ssh restart` to restart the SSH Service
+5. Type `sudo nano /etc/ssh/sshd_config`
+6. Find the line that has `#Port22` and change it to `Port4242` without the # (Hash) in front of it
+7. Save and Exit Nano 
+8. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
+9. Lastly type `sudo service ssh restart` to restart the SSH Service 
 
-Part 4.6 - Setting Password Policy
+### Part 4.4 - Installing and Configuring UFW (Uncomplicated Firewall)
 
-Part 4.7 - Creating a Group
+1. First type `apt-get install ufw` to install UFW
+2. Type `sudo ufw enable` to inable UFW
+3. Type `sudo ufw status numbered` to check the status of UFW
+4. Type `sudo ufw allow ssh` to configure the Rules
+5. Lastly type `sudo ufw allow 4242` to configure the Port Rules
 
-Part 4.8 - Creating a User and Assigning Them Into The Group
+## Part 5 Connecting the SSH Server
 
-Part 4.9 - Configuring Sudoers Group
+1. Go to your Virtual Box Program
+2. Click on your Virtual Machine and select `Settings`
+3. Click `Network` then `Adapter 1` then `Advanced` and then click on `Port Forwarding`
+![1*rCj_FeuZ5Rm2abz48qhulg](https://user-images.githubusercontent.com/58959408/174720900-39eda7e0-9be8-453c-94f1-4aa1a6b10951.png)
+4. Change the Host Port and Guest Port to `4242`
+![1*61-KSUCFcerO1wPqBcYISg](https://user-images.githubusercontent.com/58959408/174720987-e8de3bf9-2ffa-40ca-9d5c-4d0dea9d0b30.png)
+5. Then head back to your Virtual Machine
+6. Type `sudo systemctl restart ssh` to restart your SSH Server
+7. Type `sudo service sshd status` to check your SSH Status
+8. Open an iTerm and type the following `ssh your_username@127.0.0.1 -p 4242`
+9. Lastly type `exit` to quit your SSH iTerm Connection 
 
-Part 4.10 - Crontab Configuation
+## Part 6 - Continue Configurating Your Virtual Machine
 
-## Part 5 - Born2BeRoot Defence Evaluation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Part 4.6 - Setting Password Policy
+
+### Part 4.7 - Creating a Group
+
+### Part 4.8 - Creating a User and Assigning Them Into The Group
+
+### Part 4.9 - Configuring Sudoers Group
+
+### Part 4.10 - Crontab Configuation
+
+## Part 7 - Born2BeRoot Defence Evaluation
