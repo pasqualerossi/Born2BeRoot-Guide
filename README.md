@@ -1,8 +1,8 @@
 ## Born2BeRoot 
-Step by Step Guide from Start to End of This Project.
+Step by Step Guide from Start to End of This Project. Mandatory only, bonus not included. 
 
-## Guide Information
-This guide is in 7 Parts: 
+## This Guide Information
+This guide has 7 Parts: 
 - Part 1 - Downloading Your Virtual Machine
 - Part 2 - Installing Your Virtual Machine
 - Part 3 - Starting Your Virtual Machine
@@ -13,7 +13,7 @@ This guide is in 7 Parts:
 
 ## Part 1 - Downloading Your Virtual Machine
 
-1. Click on this link https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+1. Click on this link **https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/**
 
 2. Scroll to the bottom of the website and click `debian-11.3.0-amd64-netinst.iso` (3rd from the bottom), if that doesn't work, then you can try either `debian-edu-11.3.0-amd64-netinst.iso` or `debian-mac-11.3.0-amd64-netinst.iso`
 
@@ -277,3 +277,4 @@ Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence
 
 
 ## Part 7 - Born2BeRoot Defence Evaluation
+
