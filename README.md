@@ -1,6 +1,10 @@
 ## Born2BeRoot Step by Step
 
-This guide is in 4 Parts (Downloading Your Virtual Machine, Installing Your Virtual Machine, Accessing Your Virtual Machine, 
+This Guide is in 4 Parts: 
+- Downloading Your Virtual Machine
+- Installing Your Virtual Machine
+- Accessing Your Virtual Machine
+- Configurating Your Virtual Machine
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -51,5 +55,20 @@ This guide is in 4 Parts (Downloading Your Virtual Machine, Installing Your Virt
 13. Click `Start` (The Green Arrow ➡️) to start your Virtual Machine
 ![1*Yg53c1-01g4VzTqhcVEEcA](https://user-images.githubusercontent.com/58959408/174702806-1bd8fce3-aac6-44b3-84d9-c76252dfecd8.png)
 
-
 ## Part 3 - Accessing Your Virtual Machine
+
+1. Click `Install`
+
+2. Click `English - English` or your language of preference
+
+3. Click `Australia` or the country your installing this Virtual Machine
+
+4. Click `American English` or your keyboard of preference
+
+5. Choose a Host Name as your login, along with 42 at the end of your Host Name (eg. prossi42) - write down your Host Name as you will need this later on. 
+
+6. Click `Continue`
+
+7. Choose a Host Name Password - write down this as well as your will need this later on. 
+
+8. Choose a 
