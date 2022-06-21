@@ -1,4 +1,4 @@
-## Born2BeRoot Step by Step
+## Born2BeRoot Step by Step Guide from Start to End of This Project
 
 This Guide is in 7 Parts: 
 - Part 1 - Downloading Your Virtual Machine
@@ -13,9 +13,9 @@ This Guide is in 7 Parts:
 
 1. Click on this link https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 
-2. Scroll to the bottom of that link and click on the following: <img width="1805" alt="Screen Shot 2022-06-21 at 11 19 54 AM" src="https://user-images.githubusercontent.com/58959408/174699748-1e21ef6e-acb1-48e1-934c-879bb3e1dc39.png">
+2. Scroll to the bottom of the website and click `debian-11.3.0-amd64-netinst.iso` (3rd from the bottom), if that doesn't work, then you can try either `debian-edu-11.3.0-amd64-netinst.iso` or `debian-mac-11.3.0-amd64-netinst.iso`
 
-3. Place that download in the **goinfre** `/Users/your_login/goinfre` if you are installing on the 42 Campus.
+3. Place that download into the **goinfre** `/Users/your_login/goinfre` if you are installing on the 42 Campus.
 
 ## Part 2 - Installing Your Virtual Machine
 
@@ -68,15 +68,15 @@ This Guide is in 7 Parts:
 
 4. Click `American English` or your keyboard of preference
 
-5. Create a Host Name as your login, along with 42 at the end of your Host Name (eg. prossi42) - write down your Host Name as you will need this later on. 
+5. Create a Host Name as your login, along with 42 at the end of your Host Name (eg. prossi42) - write down your Host Name, as you will need this later on. 
 
 6. Click `Continue`
 
-7. Create a Password for the Host Name - write this down as well as your will need this later on. 
+7. Create a Password for the Host Name - write this down as well, as your will need this later on. 
 
 8. Create a User Name - write this down as well as your will need this later on. 
 
-9. Create a Password for the User Name - write this down as well as your will need this later on. 
+9. Create a Password for the User Name - write this down as well, as your will need this later on. 
 
 10. Select your `Timezone` and press `Enter`
 
@@ -90,7 +90,7 @@ This Guide is in 7 Parts:
 
 15. Press `Enter` to cancel Erasing data as you won't need this for your Virtual Machine
 
-16. Create a Encryption passphrase - write this down as well as your will need this later on. 
+16. Create a Encryption passphrase - write this down as well, as your will need this later on. 
 
 17. Retype the Encryption passphrase you just created
 
@@ -179,29 +179,65 @@ This Guide is in 7 Parts:
 
 ## Part 6 - Continue Configurating Your Virtual Machine
 
+### Part 6.1 - Setting Password Policy
 
+1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
+2. Type `sudo nano /etc/pam.d/common-password`
+3. Find the following line `password [success=2 default=ignore] pam_unix.so obscure sha512` or something similar
+4. At the end of that line add in `minlen=10` 
+5. The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
+5. Now this find this line `password  requisite     pam_pwquality.so  retry=3`
+6. At the end of that line add in `lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` 
+7. The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` it would look like this:
+![1*kEDIaQbWGJqO_JbDpPMZgw](https://user-images.githubusercontent.com/58959408/174722949-d55d7227-a304-4880-b0fa-544d2d7ded16.png)
+8. Save and Exit Nano
+9. Next type in your Virtual Machine `sudo nano /etc/login.defs`
+10. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
+11. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
+12. Lastly type `sudo reboot` to reboot the change affects
 
+### Part 6.2 - Creating a Group
 
+1. First type `sudo groupadd user42` to create a group
+2. Then type `sudo groupadd evaluating` to assign user42 to the evaluating group
+3. Lastly type `getent group` to check if the group has been created
 
+### Part 6.3 - Creating a User and Assigning Them Into The Group
 
+1. First type `cut -d: -f1 /etc/passwd` to check all local users
+2. Type `sudo adduser new_username` to create a username - write down your new_username, as you will need this later on. 
+3. Type `getent group user42` to check if the user is the group
+4. Type `getent group evaluating` to check the group
+5. Type `groups` to see which groups the user account belongs to
+6. Lastly type `chage -l your_new_username` to check if the password rules are working in users
 
+### Part 6.4 - Configuring Sudoers Group
 
+1. First type `sudo nano /etc/sudoers` to go the sudoers file
+2. Add in the following `Defaults   secure_path="..."` and `Defaults    passwd_tries=3`
+3. Then add in the following `Defaults  badpass_message="Password is wrong, please try again!"` 
+4. Then add in this `Defaults   logfile="/var/log/sudo/sudo.log"` and `Defaults   log_input,log_output`
+5. Also add in this `Defaults   requiretty`
+6. Lastly add this in `Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"` if it's already there, then skip this step.
+7. Your /etc/sudoers file should look something like this
+![1*N4Ad-9k0vfvnWKNC5q6MjQ](https://user-images.githubusercontent.com/58959408/174725518-0ebf1dac-4126-4869-9ba0-b1d05ce313c9.png)
 
+### Part 6.5 - Crontab Configuation (Last Part Before The Defence)
 
+1. First type `sudo apt-get update -y` then type `sudo apt-get install -y net-tools` to install the netstat tools
+2. Type `cd /usr/local/bin/vim monitoring.sh`
+3. Click on the link and copy the text to your `monitoring.sh` https://github.com/HEADLIGHTER/Born2BeRoot-42/blob/main/monitoring.sh
+4. Exit and save your `monitoring.sh`
+5. Then type `sudo visudo` to open your sudoers file 
+6. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo  ALL=(ALL:ALL) ALL
+7. It should look like this
+![1*l-7LtAqCon1gRkV3dY3qiQ](https://user-images.githubusercontent.com/58959408/174727595-11dbb2f9-9c34-4d11-870b-f832ea4a9224.png)
+8. Then exit and save your sudoers file
+9. Now type `sudo reboot` in your Virtual Machine to reboot sudo
+10. Type `sudo /usr/local/bin/monitoring.sh` to execute your script as su (super user)
+11. Type `sudo crontab -u root -e` to open the crontab and add the rule
+12. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that ever 10 mins, this script will show
 
-
-
-
-
-
-### Part 4.6 - Setting Password Policy
-
-### Part 4.7 - Creating a Group
-
-### Part 4.8 - Creating a User and Assigning Them Into The Group
-
-### Part 4.9 - Configuring Sudoers Group
-
-### Part 4.10 - Crontab Configuation
+Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence Instructions.
 
 ## Part 7 - Born2BeRoot Defence Evaluation
