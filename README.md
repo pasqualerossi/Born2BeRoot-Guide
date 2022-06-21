@@ -65,10 +65,50 @@ This Guide is in 4 Parts:
 
 4. Click `American English` or your keyboard of preference
 
-5. Choose a Host Name as your login, along with 42 at the end of your Host Name (eg. prossi42) - write down your Host Name as you will need this later on. 
+5. Create a Host Name as your login, along with 42 at the end of your Host Name (eg. prossi42) - write down your Host Name as you will need this later on. 
 
 6. Click `Continue`
 
-7. Choose a Host Name Password - write down this as well as your will need this later on. 
+7. Create a Password for the Host Name - write this down as well as your will need this later on. 
 
-8. Choose a 
+8. Create a User Name - write this down as well as your will need this later on. 
+
+9. Create a Password for the User Name - write this down as well as your will need this later on. 
+
+10. Select your `Timezone` and press `Enter`
+
+11. Select `Guided - use entire disk and set up encrypted LVM` and press `Enter`
+
+12. Select Disk to Partition and press `Enter`
+
+13. Select `Separate /home, /var, and /tmp paritions` and press `Enter`
+
+14. Select `Yes` and press `Enter`
+
+15. Press `Enter` to cancel Erasing data as you won't need this for your Virtual Machine
+
+16. Create a Encryption passphrase - write this down as well as your will need this later on. 
+
+17. Retype the Encryption passphrase you just created
+
+18. Type in `max`and press enter on `Continue`
+
+19. Press enter on `Yes` for Partition Disks
+
+20. Press enter on `No` for Configure the package manager
+
+21. Press `enter` on the country your in
+
+22. Press `enter` on deb.debian.org
+
+23. Leave this blank and press enter on `continue`
+
+24. Press `enter` on no for Configuring popularity-contest
+
+25. Deselect `SSH server` and `standard system utilities` by pressing the `Space key` and then press enter on `Continue`
+
+26. Press `enter` on `Yes` to Install the GRUB boot loader on a hard disk
+
+27. Press `enter` on /dev/sda 
+
+28. Press `enter` to Finish the installation
