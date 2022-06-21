@@ -25,7 +25,7 @@ This guide has 7 Parts:
 1. Click on `New`
 ![1*tkjZEbnHKqPGN24HQw_kRA](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
 
-2. Change Machine Folder to `/Users/your_login/goinfre` and then click `continue` to move on to the next step
+2. Change Machine Folder to `/Users/your_login/goinfre` and then click `continue` to move to the next step.
 ![1*WyFDl98AZfft999XCKD6kA](https://user-images.githubusercontent.com/58959408/174700651-8dc8e0a9-7709-4202-8a12-12a384ff6e3e.png)
 
 3. Set Memory Size as `1024 MB` and click continue
