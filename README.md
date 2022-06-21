@@ -314,7 +314,7 @@ Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence
 
 ## Part 7 - Born2BeRoot Defence Evaluation
 
-You will be evaluated on Born2BeRoot by the following:
+You will be evaluated on Born2BeRoot for the following:
 
 <img width="771" alt="Born2Be Root Mandatory" src="https://user-images.githubusercontent.com/58959408/174764815-70d48daf-2d14-4dc7-88a5-f1be6b409b71.png">
 
