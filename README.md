@@ -1,5 +1,7 @@
-## Born2BeRoot Step by Step Guide from Start to End of This Project
+## Born2BeRoot 
+Step by Step Guide from Start to End of This Project.
 
+## Guide Information
 This guide is in 7 Parts: 
 - Part 1 - Downloading Your Virtual Machine
 - Part 2 - Installing Your Virtual Machine
