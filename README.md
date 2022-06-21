@@ -1,5 +1,5 @@
 ## Born2BeRoot 
-Step by Step Guide from Start to End of This Project. Mandatory only, bonus not included. 
+Step by Step Guide from the start to end of This Project. Mandatory only, this guide doesn't cover the bonus part. 
 
 ## This Guide Information
 This guide has 7 Parts: 
