@@ -36,7 +36,7 @@ This guide is in 4 Parts (Downloading Your Virtual Machine, Installing Your Virt
 8. Click `Settings` and then click `Storage`
 ![1*V2wtat5wJyBjSEoXatkG0A](https://user-images.githubusercontent.com/58959408/174701830-69f7b13c-ac5d-44c2-9f05-de8fd8dcc6f5.png)
 
-9. Click on `Optical Drive` 
+9. Click on `Optical Drive`
 ![1*je75kGWjXl0M6PlqEzHgoA](https://user-images.githubusercontent.com/58959408/174701924-0c69938f-10ec-498f-adec-bacf073b4b99.png)
 
 10. Click on `Choose a disk file...`
@@ -46,5 +46,10 @@ This guide is in 4 Parts (Downloading Your Virtual Machine, Installing Your Virt
 ![1*FOldzHFaQ2JS_phe6z6T4g](https://user-images.githubusercontent.com/58959408/174702161-957eb0b6-2803-407f-b018-c02f7615f027.png)
 
 12. Click on your `Virtual Machine` and then click `'ok`
+![1*Evj7Z2EOq102A1zUVgUnQg](https://user-images.githubusercontent.com/58959408/174702820-824e0acf-f919-4bfb-a619-eea8068fe309.png)
+
+13. Click `Start` (The Green Arrow ➡️) to start your Virtual Machine
+![1*Yg53c1-01g4VzTqhcVEEcA](https://user-images.githubusercontent.com/58959408/174702806-1bd8fce3-aac6-44b3-84d9-c76252dfecd8.png)
+
 
 ## Part 3 - Accessing Your Virtual Machine
