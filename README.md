@@ -1,11 +1,11 @@
 ## Born2BeRoot Step by Step
 
 This Guide is in 5 Parts: 
-- Downloading Your Virtual Machine
-- Installing Your Virtual Machine
-- Starting Your Virtual Machine
-- Accessing Your Virtual Machine
-- Configurating Your Virtual Machine
+- Part 1 - Downloading Your Virtual Machine
+- Part 2 - Installing Your Virtual Machine
+- Part 3 - Starting Your Virtual Machine
+- Part 4 - Configurating Your Virtual Machine
+- Part 5 - Born2BeRoot Defence Evaluation
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -115,3 +115,41 @@ This Guide is in 5 Parts:
 28. Press `enter` to Finish the installation
 
 ## Part 3 - Starting Your Virtual Machine
+
+1. Press enter on `Debian GNU/Linux`
+
+2. Enter your encryption password you had created before
+
+3. Login in as the your_username you had created before
+
+4. Type `Isblk` in your Virtual Machine to see the partition
+
+## Part 4 - Configurating Your Virtual Machine
+
+### Part 4.1 - Installing Sudo
+
+1. Type `su -` to login in as the root user.
+2. Type `apt-get update -y` then type `apt-get upgrade -y` and then type `apt install sudo`
+3. Type `su -` then type `usermod -aG sudo your_username` to add user in the sudo group
+4. Type `sudo visudo` to open sudoers file
+5. Add this line in the file `your_username   ALL=(ALL) ALL`
+
+### Part 4.2 - Installing Git and Vim
+
+Part 4.3 - Installing and Configuring SSH (Secure Shell Host)
+
+Part 4.4 - Installing and Configuring UFW (Uncomplicated Firewall)
+
+Part 4.5 - Connecting the SSH Server
+
+Part 4.6 - Setting Password Policy
+
+Part 4.7 - Creating a Group
+
+Part 4.8 - Creating a User and Assigning Them Into The Group
+
+Part 4.9 - Configuring Sudoers Group
+
+Part 4.10 - Crontab Configuation
+
+## Part 5 - Born2BeRoot Defence Evaluation
