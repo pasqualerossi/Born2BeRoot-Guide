@@ -319,12 +319,10 @@ wall "	#Architecture: $arc
 11. Type `sudo crontab -u root -e` to open the crontab and add the rule
 12. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that ever 10 mins, this script will show
 
-Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence Instructions.
-
 
 ## Part 7 - Signature.txt
 
-To generate a `signature.txt` file (Before you generate a signature.txt, please turn off your Virtual Machine, as your signature number may be altered during the evaluation).
+To generate a `signature.txt` number (Warning: before you generate a signature.txt, please turn off your Virtual Machine, as your signature number will be altered during the evaluation).
 
 1. Open iTerm and type the following `cd /goinfre/VirtualBox VMs`
 2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
