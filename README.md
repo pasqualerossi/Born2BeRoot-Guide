@@ -313,7 +313,7 @@ Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence
 
 ## Part 7 - Signature.txt
 
-To generate a `signature.txt` file (Before you generate a signature.txt, please turn off your Virtual Machine, as your signature number may be altered during the evaluation)
+To generate a `signature.txt` file (Before you generate a signature.txt, please turn off your Virtual Machine, as your signature number may be altered during the evaluation).
 
 1. Open iTerm and type the following `cd /goinfre/VirtualBox VMs`
 2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
