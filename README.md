@@ -2,14 +2,15 @@
 Step by Step Guide from the start to end of This Project. Mandatory only, this guide doesn't cover the bonus part. 
 
 ## This Guide Information
-This guide has 7 Parts: 
+This guide has 8 Parts: 
 - Part 1 - Downloading Your Virtual Machine
 - Part 2 - Installing Your Virtual Machine
 - Part 3 - Starting Your Virtual Machine
 - Part 4 - Configurating Your Virtual Machine
 - Part 5 - Connecting to the SSH Server
 - Part 6 - Continue Configurating Your Virtual Machine
-- Part 7 - Your Born2BeRoot Defence Evaluation
+- Part 7 - Signature.txt
+- Part 8 - Your Born2BeRoot Defence Evaluation with Questions
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -310,7 +311,17 @@ wall "	#Architecture: $arc
 Congraluations! that is the end of the Born2BeRoot Project, now onto the Defence Instructions.
 
 
-## Part 7 - Born2BeRoot Defence Evaluation
+## Part 7 - Signature.txt
+
+To generate a `signature.txt` file (Before you generate a signature.txt, please turn off your Virtual Machine, as your signature number may be altered during the evaluation)
+
+1. Open iTerm and type the following `cd /goinfre/VirtualBox VMs`
+2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
+3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
+4. Copy your signature number and create a .txt file and paste it in there, ready for submission. 
+
+
+## Part 8 - Born2BeRoot Defence Evaluation with Questions
 
 You will be evaluated on Born2BeRoot for the following:
 
@@ -321,11 +332,62 @@ You will be evaluated on Born2BeRoot for the following:
 <img width="771" alt="Born2Be Root Mandatory 4" src="https://user-images.githubusercontent.com/58959408/174767813-b9bff177-356b-44cf-915d-8a488421aff9.png">
 <img width="896" alt="Screen Shot 2022-06-21 at 7 02 41 PM" src="https://user-images.githubusercontent.com/58959408/174767831-e3969d5b-80b6-4053-bf05-e67d5721e580.png">
 
-### Signature.txt
+## Evaluation Questions
 
-To generate a `signature.txt` file (Before you generate a signature.txt, please turn off your Virtual Machine, as your signature number may be altered during the evaluation)
+### Why did I choose Debian?
+Easier to install and configure so better for personal servers.
 
-1. Open iTerm and type the following `cd /goinfre/VirtualBox VMs`
-2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
-3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
-4. Copy your signature number and create a .txt file and paste it in there, ready for submission. 
+### Difference between Debian and CentOS?
+Debian is a lot easier to update then CentOS when a new version is released. Debian is more user-friendly and supports many libraries, filesystems and architecture. It also has more options for customisation. If you are a larger business CentOS offers more Enterprise features and excellent support for the Enterprise software. 
+
+### What is a Virtual Machine?
+Is a resource that uses software instead of a physical computer to run programs or apps. Each VM has its own operating system and functions separately, so you can have more than one VM per machine. Can be used to test applications in a safe, separate environment. Works by using software to simulate virtual hardware and run on a host machine.
+
+### What is the difference between aptitude and APT (Advanced Packaging Tool)?
+* Aptitude is a high-level package manager while APT is lower level which can be used by other higher level package managers
+* Aptitude is smarter and will automatically remove unused packages or suggest installation of dependent packages
+* Apt will only do explicitly what it is told to do in the command line
+
+### What is AppArmor?
+Linux security system that provides Mandatory Access Control (MAC) security. Allows the system admin to restrict the actions that processes can perform. It is included by default with Debian. Run aa-status to check if it is running.
+
+### Password Rules
+For the password rules, we use the password quality checking library and there are two files the common-password file which sets the rules like upper and lower case characters, duplicate characters etc and the login.defs file which stores the password expiration rules (30 days etc).
+Sudo nano /etc/login.defs
+Sudo nano /etc/pam.d/common-password
+
+### What is LVM
+Logical Volume Manager – allows us to easily manipulate the partitions or logical volume on a storage device. 
+
+### UFW (Uncomplicated Firewall) 
+UFW is a interface to modify the firewall of the device without compromising security. You use it to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, can set a specific port for it to work with.
+
+### What is SSH?
+SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH.
+
+### What is Cron?
+Cron or cron job is a command line utility to schedule commands or scripts to happen at specific intervals or a specific time each day. Useful if you want to set your server to restart at a specific time each day. 
+
+- `cd /usr/local/bin` – to show monitoring.sh
+- `sudo crontab -u root -e` – to edit the cron job
+- `change script to */1 * * * * sleep 30s && script path` – to run it every 30 seconds, delete the line to stop the job from running.
+
+### Evaluation Commands for UFW, Group, Host, lsblk and SSH
+
+- `sudo ufw status`
+- `sudo systemctl status ssh`
+- `getent group sudo`
+- `getent group user42`
+- `sudo adduser new username`
+- `sudo groupadd groupname` – add new user group;
+- `sudo usermod -aG group username` - add user to user group
+- `sudo chage -l username` - check password expire rules
+- `hostnamectl`
+- `hostnamectl set-hostname new_hostname` - to change the current hostname
+- `sudo nano /etc/hosts` - change current hostname to new hostname
+- `lsblk` to display the partitions
+- `dpkg -l | grep sudo –` to show that sudo is installed
+- `sudo ufw status numbered`
+- `sudo ufw allow port-id`
+- `sudo ufw delete rule number`
+- `ssh your_user_id@127.0.0.1 -p 4242` -  do this in terminal to show that SSH to port 4242 is working
