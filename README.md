@@ -158,7 +158,7 @@ This guide has 8 Parts:
 
 3. Login in as the your_username you had created before
 
-4. Type `Isblk` in your Virtual Machine to see the partition
+4. Type `lsblk` in your Virtual Machine to see the partition
 
 ## Part 4 - Configurating Your Virtual Machine
 
@@ -166,7 +166,7 @@ This guide has 8 Parts:
 
 1. First type `su -` to login in as the root user.
 2. Type `apt-get update -y` then type `apt-get upgrade -y` and then type `apt install sudo`
-3. Type `su -` then type `usermod -aG sudo your_username` to add user in the sudo group
+3. Type `su -` then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
 4. Type `sudo visudo` to open sudoers file
 5. Lastly add this line in the file `your_username   ALL=(ALL) ALL`
 
@@ -195,8 +195,8 @@ This guide has 8 Parts:
 2. Type `sudo ufw enable` to inable UFW
 3. Type `sudo ufw status numbered` to check the status of UFW
 4. Type `sudo ufw allow ssh` to configure the Rules
-5. Lastly type `sudo ufw allow 4242` to configure the Port Rules
-
+5. Type `sudo ufw allow 4242` to configure the Port Rules
+6. Lastly Type `sudo ufw status numbered` to check the status of UFW 4242 Port
 
 ## Part 5 Connecting the SSH Server
 
@@ -221,16 +221,16 @@ This guide has 8 Parts:
 2. Type `sudo nano /etc/pam.d/common-password`
 3. Find the following line `password [success=2 default=ignore] pam_unix.so obscure sha512` or something similar
 4. At the end of that line add in `minlen=10` 
-5. The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
+4.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
 5. Now this find this line `password  requisite     pam_pwquality.so  retry=3`
-6. At the end of that line add in `lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` 
-7. The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` it would look like this:
+5.1 At the end of that line add in `lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` 
+5.2 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` it would look like this:
 ![1*kEDIaQbWGJqO_JbDpPMZgw](https://user-images.githubusercontent.com/58959408/174722949-d55d7227-a304-4880-b0fa-544d2d7ded16.png)
-8. Save and Exit Nano
-9. Next type in your Virtual Machine `sudo nano /etc/login.defs`
-10. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
-11. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
-12. Lastly type `sudo reboot` to reboot the change affects
+6. Save and Exit Nano
+7. Next type in your Virtual Machine `sudo nano /etc/login.defs`
+8. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
+9. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
+10. Lastly type `sudo reboot` to reboot the change affects
 
 ### Part 6.2 - Creating a Group
 
@@ -247,7 +247,12 @@ This guide has 8 Parts:
 5. Type `groups` to see which groups the user account belongs to
 6. Lastly type `chage -l your_new_username` to check if the password rules are working in users
 
-### Part 6.4 - Configuring Sudoers Group
+### Part 6.4 - Creating sudo.log
+
+1. Type `cd/var/log/sudo/touch sudo.log` to create a sudo.log file
+2. Then type `cd` to head back to root
+
+### Part 6.4.1 - Configuring Sudoers Group
 
 1. First type `sudo nano /etc/sudoers` to go the sudoers file
 2. Add in the following `Defaults   secure_path="..."` and `Defaults    passwd_tries=3`
@@ -262,8 +267,10 @@ This guide has 8 Parts:
 
 1. First type `sudo apt-get update -y` then type `sudo apt-get install -y net-tools` to install the netstat tools
 2. Type `cd /usr/local/bin/vim monitoring.sh`
-3. Copy the following text to your `monitoring.sh` (To copy the text below, hover with your mouse to the right corner of the text below and a copy icon will appear). 
 
+### Part 6.5.1 - Copy Text Below onto Virtual Machine
+
+1. Copy this text (To copy the text below, hover with your mouse to the right corner of the text below and a copy icon will appear). 
 ```
 #!/bin/bash
 arc=$(uname -a)
@@ -296,10 +303,14 @@ wall "	#Architecture: $arc
 	#Network: IP $ip ($mac)
 	#Sudo: $cmds cmd"
 ```
+2. Then open up iTerm2 and type `ssh your_host_name42@127.0.0.1 -p 4242` then type your password. 
+3. Then type `cd /usr/local/bin/vim monitoring.sh` and paste the text below in the `vim monitoring.sh` by doing `command` + `v` on your Apple keyboard.
 
-4. Exit and save your `monitoring.sh`
+4. Save and Exit your `monitoring.sh`
+- 4.1 - Then type `exit` to exit the iTerm SSH Login.
+- 4.2 - Then go back to your Virtual Machine (not the iTerm one) and continue on with the steps below. 
 5. Then type `sudo visudo` to open your sudoers file 
-6. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo  ALL=(ALL:ALL) ALL
+6. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo ALL=(ALL:ALL) ALL
 7. It should look like this
 ![1*l-7LtAqCon1gRkV3dY3qiQ](https://user-images.githubusercontent.com/58959408/174727595-11dbb2f9-9c34-4d11-870b-f832ea4a9224.png)
 8. Then exit and save your sudoers file
