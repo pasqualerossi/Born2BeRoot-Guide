@@ -51,7 +51,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ![1*rYdYJbPswCVCUa5pwKcRZA](https://user-images.githubusercontent.com/58959408/174745855-73880988-be69-45cc-bb6d-7c6c1a40c1ac.png)
 
 8. Click `Settings` and then click `Storage` to view your Virtual Machine Storage
-![1*V2wtat5wJyBjSEoXatkG0A](https://user-images.githubusercontent.com/58959408/174701830-69f7b13c-ac5d-44c2-9f05-de8fd8dcc6f5.png)
+<img width="1309" alt="Screen Shot 2022-06-24 at 12 51 09 PM" src="https://user-images.githubusercontent.com/58959408/175455682-e1b4c977-2f33-41cf-b3cc-3ad78b3254ce.png">
 
 9. Click on `Optical Drive` (Optical Drive - far right blue small box)
 ![1*je75kGWjXl0M6PlqEzHgoA](https://user-images.githubusercontent.com/58959408/174701924-0c69938f-10ec-498f-adec-bacf073b4b99.png)
