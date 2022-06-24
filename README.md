@@ -185,8 +185,8 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 5. Then type `su -` 
 6. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
 7. Type `sudo visudo` to open sudoers file
-8. Lastly add this line in the file `your_username   ALL=(ALL) ALL`
-9. It should look something like this 
+8. Lastly find - # User privilege specification, type `your_username  	4ALL=(ALL) ALL`
+9. 
 
 ### Part 4.2 - Installing Git and Vim
 
