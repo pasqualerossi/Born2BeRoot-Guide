@@ -282,12 +282,9 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 6.4.1 - Configuring Sudoers Group
 
 1. First type `sudo vim /etc/sudoers` to go the sudoers file
-2. Add in the following `Defaults   secure_path="..."` and `Defaults    passwd_tries=3`
-3. Then add in the following `Defaults  badpass_message="Password is wrong, please try again!"` 
-4. Then add in this `Defaults   logfile="/var/log/sudo/sudo.log"` and `Defaults   log_input,log_output`
-5. Also add in this `Defaults   requiretty`
-6. Lastly add this in `Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"` if it's already there, then skip this step.
-7. Your /etc/sudoers file should look something like this
+2. Now edit your sudoers file to look like the following by adding in all of the defaults in the image below - ![1*N4Ad-9k0vfvnWKNC5q6MjQ](https://user-images.githubusercontent.com/58959408/174725518-0ebf1dac-4126-4869-9ba0-b1d05ce313c9.png)
+3. If `Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"` is already there, then skip this step.
+4. Your /etc/sudoers file should look something like this
 ![1*N4Ad-9k0vfvnWKNC5q6MjQ](https://user-images.githubusercontent.com/58959408/174725518-0ebf1dac-4126-4869-9ba0-b1d05ce313c9.png)
 
 ### Part 6.5 - Crontab Configuation (Last Part Before The Defence)
