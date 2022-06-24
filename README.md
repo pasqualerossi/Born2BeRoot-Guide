@@ -276,7 +276,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ### Part 6.4 - Creating sudo.log
 
-1. Type `cd/var/log/sudo/touch sudo.log` to create a sudo.log file
+1. Type `cd var/log/sudo/touch sudo.log` to create a sudo.log file
 2. Then type `cd` to head back to root
 
 ### Part 6.4.1 - Configuring Sudoers Group
@@ -356,6 +356,8 @@ To generate a `signature.txt` number (Warning: before you generate a signature.t
 2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
 3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
 4. Copy your signature number and create a .txt file and paste it in there, ready for submission. 
+
+### Virtual Machine Linked Clone
 
 
 ## Part 8 - Born2BeRoot Defence Evaluation with Questions
