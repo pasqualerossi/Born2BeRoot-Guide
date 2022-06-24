@@ -2,7 +2,7 @@
 Step by Step Guide from the start to end of This Project. This guide only covers the mandatory part of the assessment, this guide doesn't cover the bonus part. 
 
 ## Recommendation Only
-I recommend with this project that you get a few people and complete it by helping each other out step-by-step and also  
+I recommend that this project you get a few people together and complete it by helping each other out step-by-step and also evaluate each other ( 
 
 ## This Guide Information
 This guide has 8 Parts: 
@@ -267,6 +267,8 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 1. First type `cut -d: -f1 /etc/passwd` to check all local users
 2. Type `sudo adduser new_username` to create a username - write down your new_username, as you will need this later on. 
+2.1 Type `sudo usermod -aG user42 your_username`
+2.2 Type `sudo usermod -aG evaluating your_new_username`
 3. Type `getent group user42` to check if the user is the group
 4. Type `getent group evaluating` to check the group
 5. Type `groups` to see which groups the user account belongs to
