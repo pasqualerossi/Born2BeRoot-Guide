@@ -328,10 +328,9 @@ wall "	#Architecture: $arc
 ```
 2. Then open up a iTerm2 seperate from your Virtual Machine and type in iTerm `ssh your_host_name42@127.0.0.1 -p 4242` and then type your password, when it asks for it. 
 3. Then type `cd /usr/local/bin/vim monitoring.sh` and paste the text below in the vim monitoring.sh by doing `command` + `v` on your Apple keyboard.
-
 4. Save and Exit your `monitoring.sh`
 - 4.1 - Then type `exit` to exit the iTerm SSH Login.
-- 4.2 - Then go back to your Virtual Machine (not the iTerm one) and continue on with the steps below. 
+- 4.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
 5. Then type `sudo visudo` to open your sudoers file 
 6. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo ALL=(ALL:ALL) ALL
 7. It should look like this
