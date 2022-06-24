@@ -1,6 +1,9 @@
 ## Born2BeRoot 
 Step by Step Guide from the start to end of This Project. This guide only covers the mandatory part of the assessment, this guide doesn't cover the bonus part. 
 
+## Recommendation Only
+I recommend with this project that you get a few people and complete it by helping each other out step-by-step and also  
+
 ## This Guide Information
 This guide has 8 Parts: 
 - Part 1 - Downloading Your Virtual Machine
@@ -11,6 +14,7 @@ This guide has 8 Parts:
 - Part 6 - Continue Configurating Your Virtual Machine
 - Part 7 - Signature.txt
 - Part 8 - Your Born2BeRoot Defence Evaluation with Questions
+
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -26,6 +30,7 @@ This guide has 8 Parts:
 #### Don't have Virtual Box Installed?
 Download it from Managed Software Center on an Apple Computer/Laptop.
 <img width="1307" alt="Screen Shot 2022-06-24 at 12 27 24 PM" src="https://user-images.githubusercontent.com/58959408/175453219-e30d058a-946c-482b-85de-4feaad7b970d.png">
+
 
 ## Part 2 - Installing Your Virtual Machine
 
@@ -168,6 +173,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 4. Type `lsblk` in your Virtual Machine to see the partition
 
+
 ## Part 4 - Configurating Your Virtual Machine
 
 ### Part 4.1 - Installing Sudo
@@ -180,6 +186,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 6. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
 7. Type `sudo visudo` to open sudoers file
 8. Lastly add this line in the file `your_username   ALL=(ALL) ALL`
+9. It should look something like this 
 
 ### Part 4.2 - Installing Git and Vim
 
@@ -212,8 +219,10 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 5. Type `sudo ufw allow 4242` to configure the Port Rules
 6. Lastly Type `sudo ufw status numbered` to check the status of UFW 4242 Port
 
+
 ## Part 5 Connecting the SSH Server
 
+0. To exit your Virtual Machine and use your mouse, press `command` on your Apple Keyboard and your mouse should appear
 1. Go to your Virtual Box Program
 2. Click on your Virtual Machine and select `Settings`
 3. Click `Network` then `Adapter 1` then `Advanced` and then click on `Port Forwarding`
@@ -232,16 +241,18 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 6.1 - Setting Password Policy
 
 1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
-2. Type `sudo nano /etc/pam.d/common-password`
+2. Type `sudo vim /etc/pam.d/common-password`
 3. Find the following line `password [success=2 default=ignore] pam_unix.so obscure sha512` or something similar
-4. At the end of that line add in `minlen=10` 
+4. Go to the end of that line add in `minlen=10` 
 4.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
 5. Now this find this line `password  requisite     pam_pwquality.so  retry=3`
 5.1 At the end of that line add in `lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` 
 5.2 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` it would look like this:
+
 ![1*kEDIaQbWGJqO_JbDpPMZgw](https://user-images.githubusercontent.com/58959408/174722949-d55d7227-a304-4880-b0fa-544d2d7ded16.png)
-6. Save and Exit Nano
-7. Next type in your Virtual Machine `sudo nano /etc/login.defs`
+
+6. Save and Exit Vim
+7. Next type in your Virtual Machine `sudo vim /etc/login.defs`
 8. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
 9. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
 10. Lastly type `sudo reboot` to reboot the change affects
