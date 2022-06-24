@@ -288,10 +288,12 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 6.5 - Crontab Configuation (Last Part Before The Defence)
 
 1. First type `sudo apt-get update -y` 
-3. Then type `sudo apt-get install -y net-tools` to install the netstat tools
-2. Type `cd /usr/local/bin/vim monitoring.sh`
+2. Then type `sudo apt-get install -y net-tools` to install the netstat tools
+3. Then type `cd /usr/local/bin/
+4. Then type `touch monitoring.sh`
+5. Lastly type `chmod 777 monitoring.sh`
 
-### Part 6.5.1 - Copy Text Below onto Virtual Machine
+### Part 6.5.1 - Copy Text Below onto Virtual Machine 
 
 1. Copy this text (To copy the text below, hover with your mouse to the right corner of the text below and a copy icon will appear). 
 ```
@@ -339,7 +341,7 @@ wall "	#Architecture: $arc
 9. Now type `sudo reboot` in your Virtual Machine to reboot sudo
 10. Type `sudo /usr/local/bin/monitoring.sh` to execute your script as su (super user)
 11. Type `sudo crontab -u root -e` to open the crontab and add the rule
-12. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that ever 10 mins, this script will show
+12. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
 
 
 ## Part 7 - Signature.txt
