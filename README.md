@@ -171,17 +171,22 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 4.1 - Installing Sudo
 
 1. First type `su -` to login in as the root user.
-2. Type `apt-get update -y` then type `apt-get upgrade -y` and then type `apt install sudo`
-3. Type `su -` then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
-4. Type `sudo visudo` to open sudoers file
-5. Lastly add this line in the file `your_username   ALL=(ALL) ALL`
+2. Then type `apt-get update -y` 
+3. Then type `apt-get upgrade -y` 
+4. Then type `apt install sudo`
+5. Then type `su -` 
+6. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
+7. Type `sudo visudo` to open sudoers file
+8. Lastly add this line in the file `your_username   ALL=(ALL) ALL`
 
 ### Part 4.2 - Installing Git and Vim
 
-1. First type `apt-get update -y` then type `apt-get upgrade -y` and then type `apt-get install git -y` to install Git
-2. Type `git --version` to check the Git Version
-3. Type `sudo apt-get install wget` to get wget, a free and open source tool for downloading files from web repositories
-4. Lastly type `sudo apt-get install vim` to install Vim
+1. First type `apt-get update -y` 
+2. Then type `apt-get upgrade -y`
+3. Then type `apt-get install git -y` to install Git
+4. Then type `git --version` to check the Git Version
+5. Then Type `sudo apt-get install wget` to get wget, a free and open source tool for downloading files from web repositories
+6. Lastly type `sudo apt-get install vim` to install Vim
 
 ### Part 4.3 - Installing and Configuring SSH (Secure Shell Host)
 
