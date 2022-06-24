@@ -71,6 +71,8 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ## Part 3 - Accessing Your Virtual Machine
 
+0. To increase your Virtual Machine size, press `command` + `c` on your Apple Keyboard at the same time and then use your mouse to drag the screen to the size you wish. 
+
 1. Use arrow keys 🔼 🔽 and press `Enter` on `Install` (This will start the installation proccess)
  ![1*-tV-M-4g6MH8h6pWJ27bCg](https://user-images.githubusercontent.com/58959408/174728861-fb9435a5-04e5-402c-80a3-f366c9b51be8.png)
 
