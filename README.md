@@ -194,9 +194,9 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 2. Type `sudo apt install openssh-server`
 3. Type `sudo systemctl status ssh` to check SSH Server Status
 4. Type `service ssh restart` to restart the SSH Service
-5. Type `sudo nano /etc/ssh/sshd_config`
+5. Type `sudo vim /etc/ssh/sshd_config`
 6. Find the line that has `#Port22` and change it to `Port4242` without the # (Hash) in front of it
-7. Save and Exit Nano 
+7. Save and Exit Vim 
 8. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
 9. Lastly type `sudo service ssh restart` to restart the SSH Service 
 
@@ -265,7 +265,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ### Part 6.4.1 - Configuring Sudoers Group
 
-1. First type `sudo nano /etc/sudoers` to go the sudoers file
+1. First type `sudo vim /etc/sudoers` to go the sudoers file
 2. Add in the following `Defaults   secure_path="..."` and `Defaults    passwd_tries=3`
 3. Then add in the following `Defaults  badpass_message="Password is wrong, please try again!"` 
 4. Then add in this `Defaults   logfile="/var/log/sudo/sudo.log"` and `Defaults   log_input,log_output`
@@ -276,7 +276,8 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ### Part 6.5 - Crontab Configuation (Last Part Before The Defence)
 
-1. First type `sudo apt-get update -y` then type `sudo apt-get install -y net-tools` to install the netstat tools
+1. First type `sudo apt-get update -y` 
+3. Then type `sudo apt-get install -y net-tools` to install the netstat tools
 2. Type `cd /usr/local/bin/vim monitoring.sh`
 
 ### Part 6.5.1 - Copy Text Below onto Virtual Machine
@@ -314,7 +315,7 @@ wall "	#Architecture: $arc
 	#Network: IP $ip ($mac)
 	#Sudo: $cmds cmd"
 ```
-2. Then open up iTerm2 and type `ssh your_host_name42@127.0.0.1 -p 4242` then type your password. 
+2. Then open up a iTerm2 seperate from your Virtual Machine and type in iTerm `ssh your_host_name42@127.0.0.1 -p 4242` and then type your password, when it asks for it. 
 3. Then type `cd /usr/local/bin/vim monitoring.sh` and paste the text below in the `vim monitoring.sh` by doing `command` + `v` on your Apple keyboard.
 
 4. Save and Exit your `monitoring.sh`
