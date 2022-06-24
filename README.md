@@ -20,6 +20,12 @@ This guide has 8 Parts:
 
 3. Place that download into the **goinfre** `/Users/your_login/goinfre` if you are installing on the 42 Campus.
 
+#### Now head over to Virtual Box to continue on.
+<img width="264" alt="Screen Shot 2022-06-24 at 12 18 12 PM" src="https://user-images.githubusercontent.com/58959408/175452234-79c7f008-10b2-4e4b-a602-95886d9e2508.png">
+
+#### Don't have Virtual Box Installed?
+Download it from Managed Software Center on an Apple Computer/Laptop.
+<img width="1307" alt="Screen Shot 2022-06-24 at 12 27 24 PM" src="https://user-images.githubusercontent.com/58959408/175453219-e30d058a-946c-482b-85de-4feaad7b970d.png">
 
 ## Part 2 - Installing Your Virtual Machine
 
