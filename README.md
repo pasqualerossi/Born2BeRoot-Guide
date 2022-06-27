@@ -2,7 +2,9 @@
 Step by Step Guide from the start to end of This Project. This guide only covers the mandatory part of the assessment, this guide doesn't cover the bonus part. 
 
 ## Recommendation Only
-I recommend that this project you get a few people together and complete it by helping each other out step-by-step and also evaluate each other at the end of this project (4 people is ideal).
+I recommend that this project you get a few people together and complete it by helping each other out step-by-step and also evaluate each other at the end of this project (3 other people is ideal, since those 3 people will most likely evaluate you).
+
+If you want to know who else is working on Born2BeRoot, check out this tool - https://find-peers.codam.nl/
 
 ## This Guide Information
 This guide has 8 Parts: 
