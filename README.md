@@ -278,7 +278,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ### Part 6.4 - Creating sudo.log
 
-1. Type `cd var/log/sudo/touch sudo.log` to create a sudo.log file
+1. Type `cd var/log/touch sudo.log` to create a sudo.log file
 2. Then type `cd` to head back to root
 
 ### Part 6.4.1 - Configuring Sudoers Group
