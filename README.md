@@ -204,7 +204,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 2. Type `sudo apt install openssh-server`
 3. Type `sudo systemctl status ssh` to check SSH Server Status
 4. Type `service ssh restart` to restart the SSH Service
-5. Type `sudo vim /etc/ssh/sshd_config`
+5. Type `sudo nano /etc/ssh/sshd_config`
 6. Find this line `#Port22` 
 7. Change the line to `Port4242` without the # (Hash) in front of it
 8. Save and Exit Vim 
