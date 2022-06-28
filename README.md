@@ -243,12 +243,13 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
 2. Type `sudo vim /etc/pam.d/common-password`
-3. Find the following line `password [success=2 default=ignore] pam_unix.so obscure sha512` or something similar
+3. Find the following line - password [success=2 default=ignore] pam_unix.so obscure sha512 or something similar
 4. Go to the end of that line add in `minlen=10` 
 - 4.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
-5. Now this find this line `password  requisite     pam_pwquality.so  retry=3`
-- 5.1 At the end of that line add in `lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` 
-- 5.2 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root` it would look like this:
+5. Now find this line - password  requisite     pam_pwquality.so  retry=
+- 5.1 Edit this line to look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
+
+Your /etc/pam.d/common-password file should look like this:
 
 ![1*kEDIaQbWGJqO_JbDpPMZgw](https://user-images.githubusercontent.com/58959408/174722949-d55d7227-a304-4880-b0fa-544d2d7ded16.png)
 
