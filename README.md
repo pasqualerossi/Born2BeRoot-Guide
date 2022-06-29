@@ -24,7 +24,7 @@ This guide has 8 Parts:
 
 2. Scroll to the bottom of the website and click `debian-11.3.0-amd64-netinst.iso` (3rd from the bottom), if that doesn't work, then you can try either `debian-edu-11.3.0-amd64-netinst.iso` or `debian-mac-11.3.0-amd64-netinst.iso`
 
-3. Place that download into the **goinfre** `/Users/your_login/goinfre` if you are installing on the 42 Campus.
+3. Place that download into the **sgoinfre** `sgoinfre/students/your_intra_login` if you are installing on the 42 Campus.
 
 #### Now head over to Virtual Box to continue on.
 <img width="264" alt="Screen Shot 2022-06-24 at 12 18 12 PM" src="https://user-images.githubusercontent.com/58959408/175452234-79c7f008-10b2-4e4b-a602-95886d9e2508.png">
@@ -39,7 +39,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 1. Click on `New`
 ![1*tkjZEbnHKqPGN24HQw_kRA](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
 
-2. Change Machine Folder to `/Users/your_login/goinfre` and then click `continue` to move to the next step.
+2. Change Machine Folder to `sgoinfre/students/your_intra_login/Virtual Machine Name` and then click `continue` to move to the next step.
 ![1*WyFDl98AZfft999XCKD6kA](https://user-images.githubusercontent.com/58959408/174700651-8dc8e0a9-7709-4202-8a12-12a384ff6e3e.png)
 
 3. Set Memory Size as `1024 MB` and click continue
@@ -206,7 +206,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 4. Type `service ssh restart` to restart the SSH Service
 5. Type `sudo nano /etc/ssh/sshd_config`
 6. Find this line `#Port22` 
-7. Change the line to `Port4242` without the # (Hash) in front of it
+7. Change the line to `Port 4242` without the # (Hash) in front of it
 8. Save and Exit Vim 
 9. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
 10. Lastly type `sudo service ssh restart` to restart the SSH Service 
