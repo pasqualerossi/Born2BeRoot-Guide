@@ -20,7 +20,7 @@ This guide has 8 Parts:
 
 ## Part 1 - Downloading Your Virtual Machine
 
-1. Click on this link **https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/**
+1. Click on this link <ins>**https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/**
 
 2. Scroll to the bottom of the website and click `debian-11.3.0-amd64-netinst.iso` (3rd from the bottom), if that doesn't work, then you can try either `debian-edu-11.3.0-amd64-netinst.iso` or `debian-mac-11.3.0-amd64-netinst.iso`
 
@@ -78,9 +78,11 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ## Part 3 - Accessing Your Virtual Machine
 
+#### In the Virtual Machine, you will not have access to your mouse and will only use your Keyboard to operate your Virtual Machine. 
+
 0. To increase your Virtual Machine size, press `command` + `c` on your Apple Keyboard at the same time and then use your mouse to drag the screen to the size you wish. 
 
-1. Use arrow keys 🔼 🔽 and press `Enter` on `Install` (This will start the installation proccess)
+1. Use the arrow keys on your keyboard 🔼 🔽 and press `Enter` on `Install` (This will start the installation proccess)
  ![1*-tV-M-4g6MH8h6pWJ27bCg](https://user-images.githubusercontent.com/58959408/174728861-fb9435a5-04e5-402c-80a3-f366c9b51be8.png)
 
 2. Press `enter` on `English - English` or your language of preference
