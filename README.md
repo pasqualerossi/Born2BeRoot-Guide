@@ -158,8 +158,9 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 26. Press `enter` on `Yes` to Install the GRUB boot loader on a hard disk
 ![1*b2qXPye_kX8EudSvbO4yww](https://user-images.githubusercontent.com/58959408/174731448-b7b22a70-de87-4535-b8aa-3fb3294c9661.png)
 
-27. Press `enter` on /dev/sda 
-![1*s3S7D1c1t98nowFfDvJfgg](https://user-images.githubusercontent.com/58959408/174731491-7215eca8-f5e0-4862-a6ef-c49077c94cbe.png)
+27. Press `enter` on /dev/sda
+
+![174731491-7215eca8-f5e0-4862-a6ef-c49077c94cbe](https://user-images.githubusercontent.com/58959408/176393352-ed5223c7-ddf1-4c1f-97af-089be23572b2.png)
 
 28. Press `enter` on `continue` to finish the installation
 ![1*riuXLYYgESxdq-lpkivFXQ](https://user-images.githubusercontent.com/58959408/174731601-b5949892-28b5-4b5a-94dd-9b50e6f0662b.png)
