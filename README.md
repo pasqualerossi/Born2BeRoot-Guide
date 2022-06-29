@@ -1,22 +1,13 @@
-## Born2BeRoot
-Step by Step Guide from the start to the end of this Project. This guide only covers the mandatory part of the assessment, this guide doesn't cover the bonus part. 
-
-## Recommendation Only
-I recommend that for this project you get a few people together and complete step-by-step together and evaluate each other at the end of this project (3 other people is ideal, since those 3 people will most likely be evaluating you).
-
-If you want to know who else is working on Born2BeRoot, check out this tool - https://find-peers.codam.nl/
-
-## This Guide Information
+## Born2BeRoot Guide 
 This guide has 8 Parts: 
 - Part 1 - Downloading Your Virtual Machine
 - Part 2 - Installing Your Virtual Machine
 - Part 3 - Starting Your Virtual Machine
 - Part 4 - Configurating Your Virtual Machine
-- Part 5 - Connecting to the SSH Server
+- Part 5 - Connecting to SSH
 - Part 6 - Continue Configurating Your Virtual Machine
 - Part 7 - Signature.txt
 - Part 8 - Your Born2BeRoot Defence Evaluation with Questions
-
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -224,7 +215,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 6. Lastly Type `sudo ufw status numbered` to check the status of UFW 4242 Port
 
 
-## Part 5 Connecting the SSH Server
+## Part 5 Connecting to SSH
 
 0. To exit your Virtual Machine and use your mouse, press `command` on your Apple Keyboard and your mouse should appear
 1. Go to your Virtual Box Program
