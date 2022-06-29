@@ -370,7 +370,7 @@ To generate a `signature.txt` number (Warning: before you generate a signature.t
 
 ## Part 8 - Born2BeRoot Defence Evaluation with Questions
 
-You will be evaluated on Born2BeRoot for the following:
+You will be evaluated on Born2BeRoot for the following and the answers to the evaluation questions are below the screenshots:
 
 <img width="771" alt="Born2Be Root Mandatory" src="https://user-images.githubusercontent.com/58959408/174764815-70d48daf-2d14-4dc7-88a5-f1be6b409b71.png">
 
