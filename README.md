@@ -197,13 +197,12 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 1. First type `sudo apt-get update`
 2. Type `sudo apt install openssh-server`
 3. Type `sudo systemctl status ssh` to check SSH Server Status
-4. Type `service ssh restart` to restart the SSH Service
-5. Type `sudo nano /etc/ssh/sshd_config`
-6. Find this line `#Port22` 
-7. Change the line to `Port 4242` without the # (Hash) in front of it
-8. Save and Exit Vim 
-9. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
-10. Lastly type `sudo service ssh restart` to restart the SSH Service 
+4. Type `sudo vim /etc/ssh/sshd_config`
+5. Find this line `#Port22` 
+6. Change the line to `Port 4242` without the # (Hash) in front of it
+7. Save and Exit Vim 
+8. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
+9. Lastly type `sudo service ssh restart` to restart the SSH Service 
 
 ### Part 4.4 - Installing and Configuring UFW (Uncomplicated Firewall)
 
