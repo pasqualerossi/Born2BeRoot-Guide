@@ -334,19 +334,20 @@ wall "	#Architecture: $arc
 	#Sudo: $cmds cmd"
 ```
 2. Then open up a iTerm2 seperate from your Virtual Machine and type in iTerm `ssh your_host_name42@127.0.0.1 -p 4242` and then type your password, when it asks for it. 
-3. Then type `cd /usr/local/bin/vim monitoring.sh` and paste the text below in the vim monitoring.sh by doing `command` + `v` on your Apple keyboard.
-4. Save and Exit your `monitoring.sh`
-- 4.1 - Then type `exit` to exit the iTerm SSH Login.
-- 4.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
-5. Then type `sudo visudo` to open your sudoers file 
-6. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo ALL=(ALL:ALL) ALL
-7. It should look like this
+3. Then type `cd /usr/local/bin`.
+4. Then type `vim monitoring.sh` and paste the text above into the vim monitoring.sh you just created, by doing `command` + `v` on your Apple keyboard.
+5. Save and Exit your `monitoring.sh`
+- 5.1 - Then type `exit` to exit the iTerm SSH Login.
+- 5.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
+6. Then type `sudo visudo` to open your sudoers file 
+7. Add in this line `your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh` under where its written %sudo ALL=(ALL:ALL) ALL
+8. It should look like this
 ![1*l-7LtAqCon1gRkV3dY3qiQ](https://user-images.githubusercontent.com/58959408/174727595-11dbb2f9-9c34-4d11-870b-f832ea4a9224.png)
-8. Then exit and save your sudoers file
-9. Now type `sudo reboot` in your Virtual Machine to reboot sudo
-10. Type `sudo /usr/local/bin/monitoring.sh` to execute your script as su (super user)
-11. Type `sudo crontab -u root -e` to open the crontab and add the rule
-12. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
+9. Then exit and save your sudoers file
+10. Now type `sudo reboot` in your Virtual Machine to reboot sudo
+11. Type `sudo /usr/local/bin/monitoring.sh` to execute your script as su (super user)
+12. Type `sudo crontab -u root -e` to open the crontab and add the rule
+13. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
 
 
 ## Part 7 - Signature.txt
