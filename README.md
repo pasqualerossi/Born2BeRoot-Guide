@@ -294,7 +294,7 @@ Defaults	requiretty
 
 1. First type `sudo apt-get update -y` 
 2. Then type `sudo apt-get install -y net-tools` to install the netstat tools
-3. Then type `cd /usr/local/bin/
+3. Then type `cd /usr/local/bin/`
 4. Then type `touch monitoring.sh`
 5. Lastly type `chmod 777 monitoring.sh`
 
