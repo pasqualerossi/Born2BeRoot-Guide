@@ -251,22 +251,17 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 6.1 - Setting Password Policy
 
 1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
-2. Type `sudo vim /etc/pam.d/common-password`
-3. Find the following line - password [success=2 default=ignore] pam_unix.so obscure sha512 or something similar
-4. Go to the end of that line and add in `minlen=10` 
-- 4.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
-5. Now find this line - password  requisite     pam_pwquality.so  retry=3
-- 5.1 Edit that line to look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
+2. Then type `sudo vim /etc/pam.d/common-password`
+3. Find the following line - password [success=2 default=ignore] pam_unix.so obscure sha512 and at the end of the line, add in `minlen=10` 
+- 3.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
+4. Now find this line - password  requisite     pam_pwquality.so  retry=3 and at the end of the line, add in `lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
+- 4.1 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
 
-Your /etc/pam.d/common-password file should look like this:
-
-![1*kEDIaQbWGJqO_JbDpPMZgw](https://user-images.githubusercontent.com/58959408/174722949-d55d7227-a304-4880-b0fa-544d2d7ded16.png)
-
-6. Save and Exit Vim
-7. Next type in your Virtual Machine `sudo vim /etc/login.defs`
-8. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
-9. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
-10. Lastly type `sudo reboot` to reboot the change affects
+5. Save and Exit Vim
+6. Next type in your Virtual Machine `sudo vim /etc/login.defs`
+7. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
+8. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
+9. Lastly type `sudo reboot` to reboot the change affects
 
 ### Part 6.2 - Creating a Group
 
