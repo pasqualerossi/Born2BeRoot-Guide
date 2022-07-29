@@ -252,18 +252,16 @@ write this down as well, as you will need this later on.
 ### Part 6.1 - Setting Password Policy
 
 1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
-
-** **
-⚠️ From 2. To 5. is being fixed as a new version has been released ⚠️ either find this part elsewhere or continue on from 6. ⚠️
-
 2. Then type `sudo vim /etc/pam.d/common-password`
-3. Find this line - password  requisite     pam_pwquality.so  retry=3 and at the end of the line, add in `lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
-- 3.1 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
-4. Find the following line - password [success=2 default=ignore] pam_unix.so obscure sha512 and at the end of the line, add in `minlen=10` 
-- 4.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
-5. Save and Exit Vim
-** **
 
+3. Find this line
+<img width="828" alt="Screen Shot 2022-07-29 at 6 40 34 PM" src="https://user-images.githubusercontent.com/58959408/181726262-8f8b7027-1929-4dda-8ac5-3957d3a1bd3a.png">
+4. Add this to the end of that line `minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
+
+- 4.1 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
+<img width="800" alt="179329787-1b718843-9272-43e4-8d92-8d83933cc938" src="https://user-images.githubusercontent.com/58959408/181725921-c1e6c2b1-9dd3-46c5-b738-111467bdb394.png">
+
+5. Save and Exit Vim
 6. Next type in your Virtual Machine `sudo vim /etc/login.defs`
 7. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
 8. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
