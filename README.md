@@ -110,11 +110,11 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 7. Create a Password for the Host Name - write this down as well, as you will need this later on. 
 ![1*ft498oj7syh4zVjI48U_tw](https://user-images.githubusercontent.com/58959408/174729894-d0fc794f-add8-49e7-9015-521f9e93958f.png)
 
-8. Create a User Name - write this down as well as your will need this later on. 
+8. Create a User Name without 42 at the end (eg. prossi) - write down your Host Name, as you will need this later on. 
 ![1*rhJWnMKN0TPBZwqRey9OeQ](https://user-images.githubusercontent.com/58959408/174729939-06933a35-5dd1-4924-848e-78d2023bb66e.png)
 
-9. Create a Password for the User Name - write this down as well, as you will need this later on. 
-![1*fJFibR-WkevpF3fLwyZiag](https://user-images.githubusercontent.com/58959408/174729975-fa06abf4-f816-48f0-aaf5-a2ccaa43c9fe.png)
+9. Create a Password for the User Name (you might as well use the same password as your Host Password in 7.) 
+write this down as well, as you will need this later on. 
 
 10. Press `enter` on your `Timezone` (The timezone your currently doing this project in)
 ![1*2i7svoURih_UIlRJ87rj5w](https://user-images.githubusercontent.com/58959408/174730349-76a4e74f-822b-4040-8d95-554d44fcb67c.png)
@@ -174,6 +174,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 28. Press `enter` on `continue` to finish the installation
 ![1*riuXLYYgESxdq-lpkivFXQ](https://user-images.githubusercontent.com/58959408/174731601-b5949892-28b5-4b5a-94dd-9b50e6f0662b.png)
 
+29. Before we move onto starting your Virtual Machine, make sure you have your Host, Username and Password/s saved or written down somewhere. 
 
 ## Part 3 - Starting Your Virtual Machine
 
@@ -251,13 +252,18 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 6.1 - Setting Password Policy
 
 1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
+
+** **
+⚠️ From 2. To 5. is being fixed as a new version has been released ⚠️ either find this part elsewhere or continue on from 6. ⚠️
+
 2. Then type `sudo vim /etc/pam.d/common-password`
 3. Find this line - password  requisite     pam_pwquality.so  retry=3 and at the end of the line, add in `lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
 - 3.1 The line should now look like this - `password  requisite     pam_pwquality.so  retry=3 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root`
 4. Find the following line - password [success=2 default=ignore] pam_unix.so obscure sha512 and at the end of the line, add in `minlen=10` 
 - 4.1 The line should now look like this `password [success=2 default=ignore] pam_unix.so obscure sha512 minlen=10`
-
 5. Save and Exit Vim
+** **
+
 6. Next type in your Virtual Machine `sudo vim /etc/login.defs`
 7. Find this part `PASS_MAX_DAYS 9999` `PASS_MIN_DAYS 0` `PASS_WARN_AGE 7`
 8. Change that part to `PASS_MAX_DAYS 30` and `PASS_MIN_DAYS 2` keep `PASS_WARN_AGE 7` as the same
