@@ -288,7 +288,8 @@ write this down as well, as you will need this later on.
 
 ### Part 6.4 - Creating sudo.log
 
-1. Type `cd var/log/touch sudo.log` to create a sudo.log file
+1. First Type `cd`
+1. Then Type `cd var/log/touch sudo.log` to create a sudo.log file
 2. Then type `cd` to head back to root
 
 ### Part 6.4.1 - Configuring Sudoers Group
