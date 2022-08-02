@@ -371,7 +371,7 @@ wall "	#Architecture: $arc
 
 To generate a `signature.txt` number (Warning: before you generate a signature.txt, please turn off your Virtual Machine, as your signature number will be altered during the evaluation).
 
-1. Open iTerm and type the following `cd /goinfre/VirtualBox VMs`
+1. Open iTerm and type the following `cd /sgoinfre/VirtualBox VMs`
 2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
 3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
 4. Copy your signature number and create a .txt file and paste it in there, ready for submission. 
