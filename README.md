@@ -420,6 +420,8 @@ wall "	#Architecture: $arc
 4. Copy your signature number and create a .txt file and paste your number in the .txt file you just created, ready for submission. 
 
 
+### 🥳 CONGRATULATIONS! YOU HAVE NOW FINISHED! NEXT IS THE EVALUATION 🔽
+<br>
 
 ## Part 8 - Born2BeRoot Defence Evaluation with Answers
 
