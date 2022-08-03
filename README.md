@@ -289,7 +289,7 @@ write this down as well, as you will need this later on.
 
 1. First Type `cd`
 2. Then type `cd var/log`
-3. Then type `mkdir sudo` (if it already exists, then continue to next step)
+3. Then type `mkdir sudo` (if it already exists, then continue to the next step - 4.)
 4. Then type `cd sudo && touch sudo.log`
 5. Lastly type `cd`
 
