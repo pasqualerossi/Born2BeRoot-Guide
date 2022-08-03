@@ -44,42 +44,55 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ## Part 2 - Installing Your Virtual Machine
 
 1. Click on `New`
+
 ![1*tkjZEbnHKqPGN24HQw_kRA](https://user-images.githubusercontent.com/58959408/174700376-2862e8e9-0a7a-4681-af3b-e82dbc7d9aa5.png)
 
 2. Change Machine Folder to `sgoinfre/students/your_intra_login/Virtual Machine Name` and then click `continue` to move to the next step.
+
 ![1*WyFDl98AZfft999XCKD6kA](https://user-images.githubusercontent.com/58959408/174700651-8dc8e0a9-7709-4202-8a12-12a384ff6e3e.png)
 
-3. Set Memory Size as `1024 MB` and click continue
+3. Set Memory Size as `1024 MB` and click continue.
+
 ![1*SoVNIKT340ARlLvQ7RuwDA](https://user-images.githubusercontent.com/58959408/174701125-7a285b0d-7036-4bef-926b-271b0032d7ad.png)
 
-4. Click `Create a Virtual Hard Disk Now` and then click `Create` to create the Hard Disk
+4. Click `Create a Virtual Hard Disk Now` and then click `Create` to create the Hard Disk.
+
 ![1*PzVboJLyLTs7qJmgbdoBYA](https://user-images.githubusercontent.com/58959408/174701209-a5d10ea3-c634-4d49-b099-01d538fe0517.png)
 
-5. Click `VDI (VirtualBox Disk Image)` and then click `Continue` to select VDI
+5. Click `VDI (VirtualBox Disk Image)` and then click `Continue` to select VDI.
+
 ![1*6_D9jIyOW0jE3a6vF_UzXg](https://user-images.githubusercontent.com/58959408/174701340-d84f6c80-e09b-43ae-b31a-6dd5d6306f23.png)
 
-6. Click `Dyamically Allocated` and then click `Continue` to only use space on your Hard Disk
+6. Click `Dyamically Allocated` and then click `Continue` to only use space on your Hard Disk.
+
 ![1*HagpR-UD0HWCb7zRTeSQXQ](https://user-images.githubusercontent.com/58959408/174744677-eac5b679-49f7-4881-a59b-00a420cbe640.png)
 
-7. Set Size as `12.00 GB` and then click `Continue` this should be enough for this project
+7. Set Size as `12.00 GB` and then click `Continue` this should be enough for this project.
+
 ![1*rYdYJbPswCVCUa5pwKcRZA](https://user-images.githubusercontent.com/58959408/174745855-73880988-be69-45cc-bb6d-7c6c1a40c1ac.png)
 
-8. Click `Settings` and then click `Storage` to view your Virtual Machine Storage
+8. Click `Settings` and then click `Storage` to view your Virtual Machine Storage.
+	
 <img width="1309" alt="Screen Shot 2022-06-24 at 12 51 09 PM" src="https://user-images.githubusercontent.com/58959408/175455682-e1b4c977-2f33-41cf-b3cc-3ad78b3254ce.png">
 
-9. Click on `Optical Drive` (Optical Drive - far right blue small box)
+9. Click on `Optical Drive` (Optical Drive - far right blue small box).
+	
 ![1*je75kGWjXl0M6PlqEzHgoA](https://user-images.githubusercontent.com/58959408/174701924-0c69938f-10ec-498f-adec-bacf073b4b99.png)
 
-10. Click on `Choose a disk file...` (2nd option in the drop down)
+10. Click on `Choose a disk file...` (2nd option in the drop down).
+	
 ![1*VDy31g0tePnUOuJ1cZQsxQ](https://user-images.githubusercontent.com/58959408/174702002-9b4fe4d2-3008-4375-9ec1-57f5e1425eb8.png)
 
-11. Then click on the Virtual Machine file you downloaded and placed into `goinfre` from before
+11. Then click on the Virtual Machine file you downloaded and placed into `goinfre` from before.
+	
 ![1*FOldzHFaQ2JS_phe6z6T4g](https://user-images.githubusercontent.com/58959408/174702161-957eb0b6-2803-407f-b018-c02f7615f027.png)
 
-12. Click on your `Virtual Machine` and then click `'ok` to confirm you Virtual Machine Storage
+12. Click on your `Virtual Machine` and then click `'ok` to confirm you Virtual Machine Storage.
+	
 ![1*Evj7Z2EOq102A1zUVgUnQg](https://user-images.githubusercontent.com/58959408/174702820-824e0acf-f919-4bfb-a619-eea8068fe309.png)
 
-13. Click `Start` (The Green Arrow ➡️) to start your Virtual Machine
+13. Click `Start` (The Green Arrow ➡️) to start your Virtual Machine.
+	
 ![1*Yg53c1-01g4VzTqhcVEEcA](https://user-images.githubusercontent.com/58959408/174702806-1bd8fce3-aac6-44b3-84d9-c76252dfecd8.png)
 
 
