@@ -411,7 +411,7 @@ wall "	#Architecture: $arc
 
 ## Part 7 - Signature.txt
 
-To generate a `signature.txt` number (Warning: before you generate a signature.txt, please turn off your Virtual Machine, as your signature number will be altered during the evaluation).
+⚠️ Warning: before you generate a signature number, please power off your Virtual Machine. ⚠️
 
 1. Open iTerm and type `cd`
 1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
