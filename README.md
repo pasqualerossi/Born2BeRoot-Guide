@@ -7,7 +7,7 @@ This guide has 8 Parts:
 - Part 5 - Connecting to SSH
 - Part 6 - Continue Configurating Your Virtual Machine
 - Part 7 - Signature.txt
-- Part 8 - Your Born2BeRoot Defence Evaluation with Questions
+- Part 8 - Your Born2BeRoot Defence Evaluation with Answers
 
 ## Part 1 - Downloading Your Virtual Machine
 
@@ -419,10 +419,9 @@ wall "	#Architecture: $arc
 3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
 4. Copy your signature number and create a .txt file and paste your number in the .txt file you just created, ready for submission. 
 
-### Virtual Machine Linked Clone
 
 
-## Part 8 - Born2BeRoot Defence Evaluation with Questions
+## Part 8 - Born2BeRoot Defence Evaluation with Answers
 
 ### Evaluation Questions
 
