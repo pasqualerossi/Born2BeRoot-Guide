@@ -349,7 +349,7 @@ Defaults	log_input, log_output
 Defaults	requiretty
 ```
 
-### Part 6.5 - Crontab Configuation (Last Part Before The Defence)
+### Part 6.5 - Crontab Configuation
 
 1. First type `sudo apt-get update -y` 
 2. Then type `sudo apt-get install -y net-tools` to install the netstat tools
@@ -409,7 +409,7 @@ wall "	#Architecture: $arc
 13. Lastly at the end of the crontab, type the following `*/10 * * * * /usr/local/bin/monitoring.sh` this means that every 10 mins, this script will show
 
 
-## Part 7 - Signature.txt
+## Part 7 - Signature.txt (Last Part Before Defence)
 
 ⚠️ Warning: before you generate a signature number, please power off your Virtual Machine. ⚠️
 
