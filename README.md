@@ -175,47 +175,51 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 	
 ![1*SUFMu-qy3rBwIe9B0Bq3kg](https://user-images.githubusercontent.com/58959408/174730857-2de10217-3d42-41ca-8f43-fc91fddb64c6.png)
 
-19. Press enter on `Yes` for Partition Disks.
+19. Press enter on `Finish partitioning and write changes to disk`. 
+
+<img width="806" alt="Screen_Shot_2022-09-05_at_5 33 43_PM" src="https://user-images.githubusercontent.com/58959408/188408125-7c93acc1-b37f-4b9f-8189-b3cc4a83da8c.png">
+
+20. Press enter on `Yes` for Partition Disks.
 	
 ![1*yfXpHyGD37OGAOX7qs1Avw](https://user-images.githubusercontent.com/58959408/174730895-f70df93e-eb7e-493c-9374-edf58a47408c.png)
 
-20. Press enter on `No` for Configure the package manager.
+21. Press enter on `No` for Configure the package manager.
 	
 ![1*Mfb1YHt4K3pZJ12TF2dXAw](https://user-images.githubusercontent.com/58959408/174730933-615891f8-d9fa-4312-ad78-d691bd648773.png)
 
-21. Press `enter` in the country that your in.
+22. Press `enter` in the country that your in.
 	
 ![1*vqV-bN3zDMqTBAKz_u548w](https://user-images.githubusercontent.com/58959408/174731009-ca532fcf-ac41-4cde-bdae-2cf18c8bf519.png)
 
-22. Press `enter` on deb.debian.org.
+23. Press `enter` on deb.debian.org.
 	
 ![1*bLnFC6MebhW1-YZlI2n9_A](https://user-images.githubusercontent.com/58959408/174731066-6bef2e53-c891-477f-8a29-7e9984a6d911.png)
 
-23. Leave this blank and press `enter` on continue.
+24. Leave this blank and press `enter` on continue.
 	
 ![1*e08pS8shLNmhZuFUrmuBwA](https://user-images.githubusercontent.com/58959408/174731175-bf4949d2-a832-4a1f-9282-c91195203c84.png)
 
-24. Press `enter` on `no` for Configuring popularity-contest.
+25. Press `enter` on `no` for Configuring popularity-contest.
 	
 ![1*1I6fHG3MHuovrarqj9PNnA](https://user-images.githubusercontent.com/58959408/174731301-88d7c53d-f5e2-46c3-b221-a8b40f70f81f.png)
 
-25. Deselect `SSH server` and `standard system utilities` by pressing the `Space key` and then press `enter` on `Continue`.
+26. Deselect `SSH server` and `standard system utilities` by pressing the `Space key` and then press `enter` on `Continue`.
 	
 ![1*lGsuAQEwT0WBhb4kdUMp9g](https://user-images.githubusercontent.com/58959408/174731387-b4859ded-9a9f-409a-a9c9-57d1ec77cbfd.png)
 
-26. Press `enter` on `Yes` to Install the GRUB boot loader on a hard disk.
+27. Press `enter` on `Yes` to Install the GRUB boot loader on a hard disk.
 	
 ![1*b2qXPye_kX8EudSvbO4yww](https://user-images.githubusercontent.com/58959408/174731448-b7b22a70-de87-4535-b8aa-3fb3294c9661.png)
 
-27. Press `enter` on /dev/sda
+28. Press `enter` on /dev/sda
 	
 ![174731491-7215eca8-f5e0-4862-a6ef-c49077c94cbe](https://user-images.githubusercontent.com/58959408/176393352-ed5223c7-ddf1-4c1f-97af-089be23572b2.png)
 
-28. Press `enter` on `continue` to finish the installation.
+29. Press `enter` on `continue` to finish the installation.
 	
 ![1*riuXLYYgESxdq-lpkivFXQ](https://user-images.githubusercontent.com/58959408/174731601-b5949892-28b5-4b5a-94dd-9b50e6f0662b.png)
 
-29. Before we move onto starting your Virtual Machine, make sure you have your Host, Username and Password/s saved or written down somewhere. 
+30. Before we move onto starting your Virtual Machine, make sure you have your Host, Username and Password/s saved or written down somewhere. 
 
 ## Part 3.1 - Starting Your Virtual Machine
 
