@@ -316,7 +316,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 ### Part 6.2 - Creating a Group
 
 1. First type `sudo groupadd user42` to create a group
-2. Then type `sudo groupadd evaluating` to assign user42 to the evaluating group
+2. Then type `sudo groupadd evaluating` to create an evaluating group
 3. Lastly type `getent group` to check if the group has been created
 
 ### Part 6.3 - Creating a User and Assigning Them Into The Group
