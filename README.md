@@ -121,6 +121,8 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ![1*zKUk6R9tls_jiyY81ue8kA](https://user-images.githubusercontent.com/58959408/174729629-4f111978-4fc1-47ae-891f-aea693929480.png)
 
+## ⚠️ NOTE: Whenever you are told to create a password, use the same password as everything.
+
 5. Create a Host Name as your login, with 42 at the end (eg. prossi42) - write down your Host Name, as you will need this later on.
 	
 ![1*r0fzgkzXOjK2DfsBCh7wEQ](https://user-images.githubusercontent.com/58959408/174729750-fbd2d215-b526-42c6-8ff0-b83f886c1f3c.png)
