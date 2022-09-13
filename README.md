@@ -483,11 +483,12 @@ Cron or cron job is a command line utility to schedule commands or scripts to ha
 - `getent group sudo`
 - `getent group user42`
 - `sudo adduser new username`
-- `sudo groupadd groupname` – add new user group;
-- `sudo usermod -aG group username` - add user to user group
+- `sudo groupadd groupname`
+- `sudo usermod -aG groupname username`
 - `sudo chage -l username` - check password expire rules
 - `hostnamectl`
 - `hostnamectl set-hostname new_hostname` - to change the current hostname
+- Restart your Virtual Machine.
 - `sudo nano /etc/hosts` - change current hostname to new hostname
 - `lsblk` to display the partitions
 - `dpkg -l | grep sudo –` to show that sudo is installed
