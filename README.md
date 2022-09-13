@@ -332,11 +332,15 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ### Part 6.4 - Creating sudo.log
 
-1. First type `cd`
-2. Then type `cd var/log`
-3. Then type `mkdir sudo` (if it already exists, then continue to the next step - 4.)
-4. Then type `cd sudo && touch sudo.log`
-5. Lastly type `cd`
+1. First type `cd ..`
+2. Type `cd ..` again.
+3. Type `cd ..` again for the 3rd time.
+4. Then type `cd var/log`
+5. Then type `mkdir sudo` (if it already exists, then continue to the next step).
+6. Then type `cd sudo && touch sudo.log`
+7. Then type `cd ..`
+8. Then type `cd ..` 
+9. Then type `cd ..` again for the 3rd time.
 
 ### Part 6.4.1 - Configuring Sudoers Group
 
