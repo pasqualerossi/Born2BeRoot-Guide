@@ -84,7 +84,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 	
 ![1*VDy31g0tePnUOuJ1cZQsxQ](https://user-images.githubusercontent.com/58959408/174702002-9b4fe4d2-3008-4375-9ec1-57f5e1425eb8.png)
 
-11. Then click on the Virtual Machine file you downloaded and placed into `goinfre` from before.
+11. Then click on the Virtual Machine file (.iso). 
 	
 ![1*FOldzHFaQ2JS_phe6z6T4g](https://user-images.githubusercontent.com/58959408/174702161-957eb0b6-2803-407f-b018-c02f7615f027.png)
 
