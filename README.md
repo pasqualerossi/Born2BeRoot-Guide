@@ -436,7 +436,7 @@ wall "	#Architecture: $arc
 
 ## Part 8 - Born2BeRoot Defence Evaluation with Answers
 
-Link to the Born2BeRoot Evaluation Checklist created by Adrian Musso-Gonzalez (@amusso-g)  - https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit
+[Link](https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit) to the [Born2BeRoot Evaluation Checklist](https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit) created by [Adrian Musso-Gonzalez](https://github.com/AdrianMussoGonzalez).
 
 ### The Evaluation Questions
 
