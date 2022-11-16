@@ -436,7 +436,9 @@ wall "	#Architecture: $arc
 
 ## Part 8 - Born2BeRoot Defence Evaluation with Answers
 
-### Evaluation Questions
+Link to the Born2BeRoot Evaluation Checklist created by Adrian Musso-Gonzalez (@amusso-g)  - https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit
+
+### The Evaluation Questions
 
 ### Why did I choose Debian?
 Easier to install and configure so better for personal servers.
