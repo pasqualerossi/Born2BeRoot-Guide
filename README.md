@@ -13,20 +13,24 @@ This guide has 8 Parts:
 
 1. Click on this link <ins>**https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/**
 
-2. Scroll to the bottom of the website and click `debian-11.3.0-amd64-netinst.iso` (3rd from the bottom), if that doesn't work, then you can try either `debian-edu-11.3.0-amd64-netinst.iso` or `debian-mac-11.3.0-amd64-netinst.iso`
+2. Scroll to the bottom of the website and click `debian-mac-xx.x.x-amd64-netinst.iso`
 
 ### Part 1.1 - Sgoingfre (Only 42 Adelaide Students)
 
 1. Head over to iTerm2
+
 <img width="622" alt="Screen Shot 2022-07-26 at 4 26 06 PM" src="https://user-images.githubusercontent.com/58959408/180943494-9c25b321-4cae-4c39-89bb-92271a245489.png">
 
 2. Then type `cd sgoinfre/students`
+
 <img width="622" alt="Screen Shot 2022-07-26 at 4 26 27 PM" src="https://user-images.githubusercontent.com/58959408/180943649-42dba828-3bd3-45ee-92ea-4e7218d65674.png">
 
 3. Then type `mkdir <your intra username>`
+
 <img width="622" alt="Screen Shot 2022-07-26 at 4 26 38 PM" src="https://user-images.githubusercontent.com/58959408/180943705-d9705f63-59a9-4b2d-9130-75d8711a25d3.png">
 
 4. Then type `chmod 700 <your intra username>`
+
 <img width="622" alt="Screen Shot 2022-07-26 at 4 26 48 PM" src="https://user-images.githubusercontent.com/58959408/180943745-09427be5-f0ff-4100-aaa3-56b4cfcea2af.png">
 
 5. Find your Debian Download from Part 1 - Downloading Your Virtual Machine and put that download in this sgoinfre folder that you have just created.
@@ -242,31 +246,25 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 2. Then type `apt-get update -y` 
 3. Then type `apt-get upgrade -y` 
 4. Then type `apt install sudo`
-5. Then type `su -` 
-6. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
-7. Type `sudo visudo` to open sudoers file
-8. Lastly find - # User privilege specification, type `your_username  	ALL=(ALL) ALL`
+5. Then type `usermod -aG sudo your_username` to add user in the sudo group (To check if user is in sudo group, type `getent group sudo`)
+6. Type `sudo visudo` to open sudoers file
+7. Lastly find - # User privilege specification, type `your_username  	ALL=(ALL) ALL`
 
 ### Part 4.2 - Installing Git and Vim
 
-1. First type `apt-get update -y` 
-2. Then type `apt-get upgrade -y`
-3. Then type `apt-get install git -y` to install Git
-4. Then type `git --version` to check the Git Version
-5. Then Type `sudo apt-get install wget` to get wget, a free and open source tool for downloading files from web repositories
-6. Lastly type `sudo apt-get install vim` to install Vim
+1. Then type `apt-get install git -y` to install Git
+2. Then type `git --version` to check the Git Version
 
 ### Part 4.3 - Installing and Configuring SSH (Secure Shell Host)
 
-1. First type `sudo apt-get update`
-2. Type `sudo apt install openssh-server`
-3. Type `sudo systemctl status ssh` to check SSH Server Status
-4. Type `sudo vim /etc/ssh/sshd_config`
-5. Find this line `#Port22` 
-6. Change the line to `Port 4242` without the # (Hash) in front of it
-7. Save and Exit Vim 
-8. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
-9. Lastly type `sudo service ssh restart` to restart the SSH Service 
+1. Type `sudo apt install openssh-server`
+2. Type `sudo systemctl status ssh` to check SSH Server Status
+3. Type `sudo vim /etc/ssh/sshd_config`
+4. Find this line `#Port22` 
+5. Change the line to `Port 4242` without the # (Hash) in front of it
+6. Save and Exit Vim 
+7. Then type `sudo grep Port /etc/ssh/sshd_config` to check if the port settings are right
+8. Lastly type `sudo service ssh restart` to restart the SSH Service 
 
 ### Part 4.4 - Installing and Configuring UFW (Uncomplicated Firewall)
 
@@ -302,7 +300,7 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 1. First type `sudo apt-get install libpam-pwquality` to install Password Quality Checking Library
 2. Then type `sudo vim /etc/pam.d/common-password`
 
-3. Find this line
+3. Find this line. `password		requisite		pam_deny.so` or
 <img width="828" alt="Screen Shot 2022-07-29 at 6 40 34 PM" src="https://user-images.githubusercontent.com/58959408/181726262-8f8b7027-1929-4dda-8ac5-3957d3a1bd3a.png">
 4. Add this to the end of that line `minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root`
 
@@ -334,19 +332,15 @@ Download it from Managed Software Center on an Apple Computer/Laptop.
 
 ### Part 6.4 - Creating sudo.log
 
-1. First type `cd ..`
-2. Type `cd ..` again.
-3. Type `cd ..` again for the 3rd time.
+1. First type `cd ~/../`
 4. Then type `cd var/log`
 5. Then type `mkdir sudo` (if it already exists, then continue to the next step).
 6. Then type `cd sudo && touch sudo.log`
-7. Then type `cd ..`
-8. Then type `cd ..` 
-9. Then type `cd ..` again for the 3rd time.
+7. Then type `cd ~/../`
 
 ### Part 6.4.1 - Configuring Sudoers Group
 
-1. First type `sudo vim /etc/sudoers` to go the sudoers file
+1. First type `sudo nano /etc/sudoers` to go the sudoers file
 2. Now edit your sudoers file to look like the following by adding in all of the defaults in the image below - ![1*N4Ad-9k0vfvnWKNC5q6MjQ](https://user-images.githubusercontent.com/58959408/174725518-0ebf1dac-4126-4869-9ba0-b1d05ce313c9.png)
 
 ```
@@ -362,11 +356,10 @@ Defaults	requiretty
 
 ### Part 6.5 - Crontab Configuation
 
-1. First type `sudo apt-get update -y` 
-2. Then type `sudo apt-get install -y net-tools` to install the netstat tools
-3. Then type `cd /usr/local/bin/`
-4. Then type `touch monitoring.sh`
-5. Lastly type `chmod 777 monitoring.sh`
+1. Then type `apt-get install -y net-tools` to install the netstat tools
+2. Then type `cd /usr/local/bin/`
+3. Then type `touch monitoring.sh`
+4. Lastly type `chmod 777 monitoring.sh`
 
 ### Part 6.5.1 - Copy Text Below onto Virtual Machine 
 
@@ -405,7 +398,7 @@ wall "	#Architecture: $arc
 ```
 2. Then open up a iTerm2 seperate from your Virtual Machine and type in iTerm `ssh your_host_name42@127.0.0.1 -p 4242` and then type your password, when it asks for it. 
 3. Then type `cd /usr/local/bin`.
-4. Then type `vim monitoring.sh` and paste the text above into the vim monitoring.sh you just created, by doing `command` + `v` on your Apple keyboard.
+4. Then type `nano monitoring.sh` and paste the text above into the vim monitoring.sh you just created, by doing `command` + `v` on your Apple keyboard.
 5. Save and Exit your `monitoring.sh`
 - 5.1 - Then type `exit` to exit the iTerm SSH Login.
 - 5.2 - Then go back to your Virtual Machine (not iTerm) and continue on with the steps below. 
@@ -426,7 +419,7 @@ wall "	#Architecture: $arc
 
 1. Open iTerm and type `cd`
 1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
-2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
+2. Then type `shasum VirtualBox.vdi > sha-out.txt && cat sha-out.txt` or whatever your Virtual Machine .vdi file is called.
 3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
 4. Copy your signature number and create a .txt file and paste your number in the .txt file you just created, ready for submission. 
 
