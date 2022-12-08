@@ -415,12 +415,13 @@ wall "	#Architecture: $arc
 
 ## Part 7 - Signature.txt (Last Part Before Defence)
 
-⚠️ Warning: before you generate a signature number, please power off your Virtual Machine. ⚠️
+⚠️ Warning: before you generate a signature number, turn off your Virtual Machine. ⚠️
 
 1. Open iTerm and type `cd`
 1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
-2. Type `shasum VirtualBox.vdi > signature.txt` or whatever your Virtual Machine file is called. (This can take from a few seconds to 5 mins)
-3. Type `cat signature.txt` to validate it's made.
+2. Type `shasum VirtualBox.vdi` or whatever your Virtual Machine is called (This can take from a few seconds to 5 mins).
+3. Copy the output number and create a signature.txt file and paste that number in the file. 
+3. Now you submit the signature.txt file with the output number in it. 
 
 ### 🥳 CONGRATULATIONS! YOU HAVE NOW FINISHED! NEXT IS THE EVALUATION 🔽
 <br>
