@@ -419,7 +419,7 @@ wall "	#Architecture: $arc
 
 1. Open iTerm and type `cd`
 1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
-2. Then type `shasum VirtualBox.vdi > sha-out.txt && cat sha-out.txt` or whatever your Virtual Machine .vdi file is called.
+2. Then type `shasum VirtualBox.vdi` or whatever your Virtual Machine .vdi file is called.
 3. After a few mins, you should see an output similar to this - 6e657c4619944be17df3c31faa030c25e43e40af
 4. Copy your signature number and create a .txt file and paste your number in the .txt file you just created, ready for submission. 
 
