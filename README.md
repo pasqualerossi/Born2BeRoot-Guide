@@ -419,7 +419,7 @@ wall "	#Architecture: $arc
 
 1. Open iTerm and type `cd`
 1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
-2. Type `shasum VirtualBox.vdi > signature.txt` or whatever your Virtual Machine file is called. (Give it a few seconds)
+2. Type `shasum VirtualBox.vdi > signature.txt` or whatever your Virtual Machine file is called. (This can take from a few seconds to 5 mins)
 3. Type `cat signature.txt` to validate it's made.
 
 ### 🥳 CONGRATULATIONS! YOU HAVE NOW FINISHED! NEXT IS THE EVALUATION 🔽
