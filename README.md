@@ -13,7 +13,7 @@ This guide has 8 Parts:
 
 1. Click on this link <ins>**https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/**
 
-2. Scroll to the bottom of the website and click `debian-mac-xx.x.x-amd64-netinst.iso`
+2. Scroll to the bottom of the website and click `debian-xx.x.x-amd64-netinst.iso`
 
 ### Part 1.1 - Sgoingfre (Only 42 Adelaide Students)
 
