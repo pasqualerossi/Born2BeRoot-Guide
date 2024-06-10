@@ -316,7 +316,7 @@ This guide has 8 Parts:
 
 ### Part 6.4 - Creating sudo.log
 
-1. First type `cd ~/../`
+1. First type `cd ~/../../`
 4. Then type `cd var/log`
 5. Then type `mkdir sudo` (if it already exists, then continue to the next step).
 6. Then type `cd sudo && touch sudo.log`
