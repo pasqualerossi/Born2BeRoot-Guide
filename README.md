@@ -405,10 +405,24 @@ wall "	#Architecture: $arc
 1. Then type `cd sgoinfre/students/<your_intra_username>/VirtualBox VMs`
 2. Type `shasum VirtualBox.vdi` or whatever your Virtual Machine is called (This can take from a few seconds to 5 mins).
 3. Copy the output number and create a signature.txt file and paste that number in the file. 
-3. Now you submit the signature.txt file with the output number in it. 
+3. Now you submit the signature.txt file with the output number in it.
 
-### 🥳 CONGRATULATIONS! YOU HAVE NOW FINISHED! NEXT IS THE EVALUATION 🔽
+### 🥳 CONGRATULATIONS! YOU HAVE NOW FINISHED!
+
 <br>
+
+> [!NOTE]
+> Attribution and Links To The Originality and Inspiration Of This Guide.
+> 
+>  ✍️ [Baigalmaa Baatar  Born2BeRoot Medium Post](https://baigal.medium.com/born2beroot-e6e26dfb50ac)
+> 
+>  :octocat: [Baigalmaa Baatar GitHub](https://github.com/baigalmaa-baatar)
+
+<br> 
+
+### NEXT IS THE EVALUATION 🔽
+
+<br> 
 
 ## Part 8 - Born2BeRoot Defence Evaluation with Answers
 
