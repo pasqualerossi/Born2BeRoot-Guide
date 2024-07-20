@@ -417,6 +417,8 @@ wall "	#Architecture: $arc
 >  ✍️ [Baigalmaa Baatar  Born2BeRoot Medium Post](https://baigal.medium.com/born2beroot-e6e26dfb50ac)
 > 
 >  :octocat: [Baigalmaa Baatar GitHub](https://github.com/baigalmaa-baatar)
+>
+> 💻 [Baigalmaa Baatar Born2BeRoot GitHub Repository](https://github.com/baigalmaa-baatar/school_42/tree/main/projects/born2beroot)
 
 <br> 
 
